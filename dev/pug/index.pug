@@ -1,0 +1,34 @@
+doctype
+html(lang="ru")
+	head
+		include assets/_metas.pug
+		include assets/_links.pug
+	body
+		
+		include assets/_header.pug
+		include assets/_scripts.pug
+		section
+			.uk-container
+				h1 text-section 1
+				i.fa.fa-address-book(aria-hidden="true")
+
+		.multiple-items
+			- var x = 5;
+				- for (var i=1; i<=x; i++) {
+					div 
+						img(src="http://via.placeholder.com/350x150", alt="")
+				- }
+
+
+		- var image_block = ["http://via.placeholder.com/150x150" , "http://via.placeholder.com/250x155" , "http://via.placeholder.com/350x160", "http://via.placeholder.com/450x170"];
+		.multiple-items
+			for name in image_block
+				div 
+					img(src=name, alt="")
+					h2= name
+			
+				
+			
+		include assets/_footer.pug
+		
+			
