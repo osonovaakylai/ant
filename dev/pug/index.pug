@@ -21,11 +21,12 @@ html(lang="ru")
 
 
 		- var image_block = ["http://via.placeholder.com/150x150" , "http://via.placeholder.com/250x155" , "http://via.placeholder.com/350x160", "http://via.placeholder.com/450x170"];
+		- var text_block = ["1" , "2" , "3", "4"];
 		.multiple-items
-			for name in image_block
+			for name, index in image_block
 				div 
-					img(src=name, alt="")
-					h2= name
+					img(src=image_block[index], alt="")
+					h2= text_block[index]
 			
 				
 			
