@@ -5,7 +5,7 @@ let dev = './dev',     // рабочая папка проекта
 // Подключаем все необходимые плагины
 const gulp         = require('gulp'),                       // Сам сборщик Gulp
       sass         = require('gulp-sass'),                  // Пакет компиляции SASS/SCSS
-      mmq          = require('gulp-merge-media-queries'),   // Плагин, соединющий медиа-запросы
+    //   mmq          = require('gulp-merge-media-queries'),   // Плагин, соединющий медиа-запросы
       pug          = require('gulp-pug'),                   // Пакет компиляции Pug (бывш. Jade)
       browserSync  = require('browser-sync'),               // Запуск локального сервера 
       babel        = require('gulp-babel'),                 // Транспиляция ES6 в ES5
@@ -38,7 +38,7 @@ gulp.task('sass',  () => {
     }))
     .pipe(autoprefixer(['last 15 versions', '> 1%'], {cascade: false}))    // настройка автоматической подстановки вендорных префиксов
     .pipe(gulp.dest(`${dev}/css`))              // путь вывода файла(-ов)
-    .pipe(mmq())                                // собираем все медиа запросы
+    // .pipe(mmq())                                // собираем все медиа запросы
     .pipe(cssnano())                            // минификация стилей
     .pipe(rename({
         suffix: '.min'                          // переименовываем минифицированный(-ые) файл(-ы) стилей
@@ -55,7 +55,7 @@ gulp.task('_sass',  () => {
     return gulp.src(`${dev}/sass/style.sass`)
     .pipe(sass())
     .pipe(autoprefixer(['last 15 versions', '> 1%'], {cascade: false}))
-    .pipe(mmq())
+    // .pipe(mmq())
     .pipe(cssnano())
     .pipe(rename({
         suffix: '.min'

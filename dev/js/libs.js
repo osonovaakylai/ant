@@ -1,5 +1,10 @@
 
 @@include('../libs/jquery/jquery.js')
-@@include('../libs/uikit-3.0.0-beta.35/js/uikit.min.js')
-@@include('../libs/uikit-3.0.0-beta.35/js/uikit-icons.min.js')
-@@include('../libs/slick/slick.min.js')
+@@include('../libs/uikit3/uikit.min.js')
+@@include('../libs/uikit3/uikit-icons.min.js')
+// @@include('../libs/slick/slick.min.js')
+// @@include('../libs/jquery.lazy/jquery.lazy.min.js')
+// @@include('../libs/jquery.lazy/jquery.lazy.plugins.min.js')
+// @@include('../libs/jquery.mask/jquery.mask.js')
+// @@include('../libs/lightgallery/lightgallery-all.js')
+// @@include('../libs/select2/select2.js')
