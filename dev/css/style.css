@@ -6927,6 +6927,7 @@ iframe.uk-cover {
   src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
   src: url("../fonts/OpenSansRegular/OpenSansRegular.woff"); }
 
-section {
-  background-color: black;
-  color: #ffffff; }
+.height {
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
