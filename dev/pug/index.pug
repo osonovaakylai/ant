@@ -3,6 +3,7 @@ html(lang="ru")
 	head
 		include assets/_metas.pug
 		include assets/_links.pug
+		include mixin/mixins.pug
 	body
 		include assets/_header.pug
 		
@@ -13,7 +14,15 @@ html(lang="ru")
 						img(src="img/jpg/pug.jpg", alt="")
 						h1 Gulp + Pug + Sass 
 						include componets/item.pug
-		
+						h3 this is mixins
+						+BDU('index.html','Ссылка href')
+						+BDS('Кнопка Submit')
+						form.uk-margin
+							fieldset.uk-fieldset
+								+FI('uk-input', 'myInputId', 'text', 'Input')
+								+FT('uk-textarea', 'myTextareaId', '10', 'Textarea')
+								+FS('uk-select', 'mySelectId')
+
 
 		include assets/_footer.pug
 		include assets/_scripts.pug
