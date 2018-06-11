@@ -1,0 +1,58 @@
+header.header
+    .uk-container
+        nav.uk-navbar-container.header_container(uk-navbar, style="position: relative; z-index: 980;", class="uk-visible@m")
+            .uk-navbar-left.header_left
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") 
+                            img(src="img/svg/logo.svg", alt="logo", width="129", height="30")
+            .uk-navbar-right.header_right
+                ul.uk-navbar-nav.header_right_list
+                    li
+                        a(href="").header_right_list_item.player_red Работы  
+                    li
+                        a(href="").header_right_list_item Наши клиенты 
+                    li
+                        a(href="").header_right_list_item Команда 
+                    li
+                        a(href="").header_right_list_item Сервисы 
+                    li
+                        a(href="").header_right_list_item О компании 
+                    li
+                        a(href="").header_right_list_item Бриф 
+                    li
+                        a(href="").header_right_list_item Контакты 
+                    li.header_right_list_item.uk-flex.uk-flex-middle
+                        span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                            a(href="") RU
+                    li.header_right_list_item.uk-flex.uk-flex-middle(style="margin-left: -2px")
+                        span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                            a(href="") EN 
+        .mobile(class="uk-hidden@m")
+            button.uk-button.uk-button-default(type="button" uk-icon="list")
+            div.uk-margin-remove(uk-dropdown="mode: click;")
+                ul.uk-nav.uk-dropdown-nav
+                    li
+                        a(href="index.html") Logo
+                    li.uk-nav-divider
+                    li
+                        a(href="index.html") Home
+                    li.uk-nav-divider
+                    li
+                        a(href="#about", uk-scroll) About
+                    li.uk-nav-divider
+                    li
+                        a(href="") Service
+                    li.uk-nav-divider
+                    li
+                        a(href="#team", uk-scroll) Team
+                    li.uk-nav-divider
+                    li.russian
+                        a(href="", rel="ru") RU
+                    li.english
+                        a(href="", rel="en") EN
+
+
+
+
+                            

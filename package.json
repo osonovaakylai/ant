@@ -45,5 +45,8 @@
 		"imagemin-jpegtran": "^5.0.2",
 		"imagemin-optipng": "^5.1.1",
 		"sw-precache": "^5.2.0"
+	},
+	"dependencies": {
+		"lightslider": "^1.1.6"
 	}
 }
