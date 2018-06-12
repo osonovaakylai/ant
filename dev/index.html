@@ -50,587 +50,282 @@
               </ul>
             </div>
           </nav>
-          <div class="mobile uk-hidden@m">
-            <button class="uk-button uk-button-default" type="button" uk-icon="list"></button>
-            <div class="uk-margin-remove" uk-dropdown="mode: click;">
-              <ul class="uk-nav uk-dropdown-nav">
-                <li><a href="index.html">Logo</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="index.html">Home</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#about" uk-scroll>About</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="">Service</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#team" uk-scroll>Team</a></li>
-                <li class="uk-nav-divider"></li>
-                <li class="russian"><a href="" rel="ru">RU</a></li>
-                <li class="english"><a href="" rel="en">EN</a></li>
+          <div class="mobile uk-grid uk-hidden@m uk-child-width-1-2" uk-grid="">
+            <div>
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="index.html"> <img src="img/svg/logo.svg" alt="logo" width="129" height="30"></a></li>
               </ul>
+            </div>
+            <div class="mobile_right uk-flex uk-flex-right">
+              <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
+              <div class="uk-margin-remove" uk-dropdown="mode: click; pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><a class="header_right_list_item player_red header_right_list_item_mob" href="index.html">Работы </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="index.html">Наши клиенты </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="#about" uk-scroll>Команда </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">Сервисы</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">О компании</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">Бриф</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><span><a class="header_right_list_item header_right_list_item_mob" href="">EN</a></span><span class="uk-margin-small-left uk-margin-small-right">|</span><span><a class="header_right_list_item header_right_list_item_mob" href="">RU</a></span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </header>
       <div class="uk-container">
-        <div uk-grid="">
-          <div class="banner_tab uk-width-1-4@m ">
-            <ul class="uk-tab-right" uk-tab="connect: #component-tab-right; animation: uk-animation-fade">
-              <li><a href="#">Все</a></li>
-              <li><a href="#">Реклама</a></li>
-              <li><a href="#">Спорт </a></li>
-              <li><a href="#">Истории</a></li>
-              <li><a href="#">Клипы </a></li>
-            </ul>
+        <div class="uk-grid banner_mobile" uk-grid="">
+          <div class="uk-width-auto@m">
+            <div class="banner_tab">
+              <ul class="uk-list">
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Реклама</a></li>
+                <li> <a href="#">Спорт </a></li>
+                <li><a href="#">Истории</a></li>
+                <li><a href="#">Клипы </a></li>
+              </ul>
+            </div>
           </div>
-          <div class="banner_slide uk-width-expand@m">
-            <ul class="uk-switcher" id="component-tab-right">
-              <li>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="">
-                  <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/1.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="player.html">Смотреть  </a></div>
-                        </div>
+          <div class="uk-width-expand@m">
+            <div class="banner_slide uk-position-relative uk-visible-toggle uk-visible@m" uk-slider="">
+              <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item">
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/1.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="player.html">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/2.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/3.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/4.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/5.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/6.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/7.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/8.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/9.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div><br>
+                  <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                    <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
+                      <div class="banner_slide_overlay_title">Билайн </div>
+                      <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
+                      <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
+                    </div>
+                  </div>
+                </li>
+              </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
+            </div>
+            <div class="mobslide uk-margin-large-bottom uk-grid uk-hidden@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+              <div> 
+                <div class="uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture">
+                  <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
+                    <div class="uk-width-expand">
+                      <div>
+                        <div class="mobslide_title">Билайн </div>
+                        <div class="mobslide_text">Тарифный план «Суйло» </div>
                       </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/2.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/3.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/4.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/5.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/6.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/7.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/8.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/9.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
+                    </div>
+                    <div class="uk-width-1-3 uk-flex uk-flex-right">
+                      <div> <a href=""> <img src="img/svg/play.svg" alt="play" width="30px" height="30px"></a></div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="">
-                  <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
+              </div>
+              <div> 
+                <div class="uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture">
+                  <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
+                    <div class="uk-width-expand">
+                      <div>
+                        <div class="mobslide_title">Билайн </div>
+                        <div class="mobslide_text">Тарифный план «Суйло» </div>
                       </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
+                    </div>
+                    <div class="uk-width-1-3 uk-flex uk-flex-right">
+                      <div> <a href=""> <img src="img/svg/play.svg" alt="play" width="30px" height="30px"></a></div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="">
-                  <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
+              </div>
+              <div> 
+                <div class="uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture">
+                  <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
+                    <div class="uk-width-expand">
+                      <div>
+                        <div class="mobslide_title">Билайн </div>
+                        <div class="mobslide_text">Тарифный план «Суйло» </div>
                       </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
+                    </div>
+                    <div class="uk-width-1-3 uk-flex uk-flex-right">
+                      <div> <a href=""> <img src="img/svg/play.svg" alt="play" width="30px" height="30px"></a></div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="">
-                  <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
-                </div>
-              </li>
-              <li>
-                <div class="uk-position-relative uk-visible-toggle uk-light" uk-slider="">
-                  <ul class="uk-slider-items uk-grid uk-grid-collapse banner_slide_item uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть  </a></div>
-                        </div>
-                      </div>
-                      <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/draft.jpg" alt="picture" uk-cover>
-                        <canvas width="200" height="200"></canvas>
-                        <div class="banner_slide_overlay uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary">
-                          <div class="banner_slide_overlay_title">Билайн </div>
-                          <div class="banner_slide_overlay_text">Тарифный план «Суйло»</div>
-                          <div class="banner_slide_overlay_link uk-button uk-button-text"> <a href="">Смотреть </a></div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -647,12 +342,36 @@
         <div class="client_block" uk-slider>
           <div class="uk-position-relative">
             <ul class="uk-slider-items uk-grid uk-grid-match uk-flex uk-flex-middle uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-1">
-              <li class="client_block_item"><img src="img/png/samsung.png" alt="samsung"></li>
-              <li class="client_block_item"><img src="img/png/beeline.png" alt="beeline"></li>
-              <li class="client_block_item"><img src="img/png/lacoste.png" alt="lacoste"></li>
-              <li class="client_block_item"><img src="img/png/converse.png" alt="converse"></li>
-              <li class="client_block_item"><img src="img/png/megacome.png" alt="megacome"></li>
-              <li class="client_block_item"><img src="img/png/samsung.png" alt="samsung"></li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/samsung.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="100"></canvas>
+                </div>
+              </li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/beeline.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="100"></canvas>
+                </div>
+              </li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/lacoste.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="100"></canvas>
+                </div>
+              </li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/converse.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="100"></canvas>
+                </div>
+              </li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/megacome.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="150"></canvas>
+                </div>
+              </li>
+              <li class="client_block_item">
+                <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/samsung.png" alt="samsung" uk-cover>
+                  <canvas width="200" height="100"></canvas>
+                </div>
+              </li>
             </ul>
           </div>
           <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin-medium"></ul>
@@ -662,7 +381,7 @@
     <div class="team">
       <div class="uk-container">
         <div class="client_title team_title">КОМАНДА</div>
-        <div class="uk-grid uk-grid-collapse uk-grid-match uk-text-center uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
+        <div class="uk-grid uk-grid-collapse uk-grid-match uk-text-center uk-child-width-1-4@m uk-child-width-1-2" uk-grid>
           <div class="team_item">
             <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/man.jpg" alt="picture" uk-cover>
               <canvas width="300" height="360"></canvas>
@@ -730,10 +449,61 @@
         </div>
       </div>
     </div>
-    <div class="brief uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/png/circle-bg.png);">
-      <div class="brief_button">СКАЧАТЬ БРИФ</div>
+    <div class="brief uk-background-contain uk-background-muted uk-height-small uk-panel uk-flex uk-flex-center uk-flex-middle" style="background-image: url(img/png/circle-bg.png);">
+      <div class="brief_button uk-flex uk-flex-middle uk-flex-center"> <a href=""><span><img src="img/svg/brif.svg" alt="brif" width="23px" height="30px"></span><span class="uk-margin-small-left">СКАЧАТЬ БРИФ </span></a></div>
     </div>
+    <div class="contact">
+      <div class="uk-container">
+        <div class="header uk-margin-large-bottom">КОНТАКТЫ </div>
+        <div class="map_info uk-visible@m">
+          <p> <span class="uk-margin-small-right" uk-icon="location"></span>г. Бишкек, Исанова 157/2</p>
+          <p> <span class="uk-margin-small-right" uk-icon="mail"></span>Antares@gmail.com</p>
+          <p> <span class="uk-margin-small-right" uk-icon="world"></span>www.antares.kg </p>
+          <p> <span class="uk-margin-small-right" uk-icon="receiver"></span>+996 500 00 00 00</p>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map"> </div>
+    <div>
+      <div class="uk-container"> 
+        <div class="map_info map_info_mod map_info_mod uk-hidden@m">
+          <p> <span class="uk-margin-small-right" uk-icon="location"></span>г. Бишкек, Исанова 157/2</p>
+          <p> <span class="uk-margin-small-right" uk-icon="mail"></span>Antares@gmail.com</p>
+          <p> <span class="uk-margin-small-right" uk-icon="world"></span>www.antares.kg </p>
+          <p> <span class="uk-margin-small-right" uk-icon="receiver"></span>+996 500 00 00 00</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="uk-container">
+        <div class="footer_body uk-grid uk-child-width-1-2@s uk-child-width-1-1" uk-grid="">
+          <div>
+            <div class="footer_body_left uk-flex uk-flex-middle">Antares Creative Group 2018</div>
+          </div>
+          <div>
+            <div class="footer_body_right uk-flex uk-flex-middle uk-flex-right"><span class="uk-margin-small-left" uk-icon="facebook"></span><span class="uk-margin-small-left" uk-icon="instagram">                          </span><span class="uk-margin-small-left"> <i class="fa fa-vk"></i></span><span class="uk-margin-small-left" uk-icon="vkontakte"></span><span class="uk-margin-small-left" uk-icon="twitter"></span><span class="uk-margin-small-left" uk-icon="youtube"> </span></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/libs.min.js"></script>
     <script src="js/common.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&amp;callback=initMap"></script>
+    <script>
+      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+      // Australia.
+      function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: {lat: 42.884045, lng: 74.592424}
+      });
+      var image = '../img/png/location.png';
+      var beachMarker = new google.maps.Marker({
+      position: {lat: 42.884045, lng: 74.592424},
+      map: map,
+      icon: image
+      });
+      }
+    </script>
   </body>
 </html>

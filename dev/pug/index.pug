@@ -8,560 +8,256 @@ html(lang="ru")
         .banner.uk-background-cover.uk-panel(style='background-image: url(img/png/banner.png); height: 802px')
             include ../components/header.pug
             .uk-container
-                div(uk-grid='')
-                    div.banner_tab(class='uk-width-1-4@m ')
-                        ul.uk-tab-right(uk-tab='connect: #component-tab-right; animation: uk-animation-fade')
-                            li
-                                a(href='#') Все
-                            li
-                                a(href='#') Реклама
-                            li
-                                a(href='#') Спорт 
-                            li
-                                a(href='#') Истории
-                            li
-                                a(href='#') Клипы 
-                    div.banner_slide(class='uk-width-expand@m')
-                        ul#component-tab-right.uk-switcher
-                            li
-                                .uk-position-relative.uk-visible-toggle.uk-light(uk-slider='')
-                                    ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item(class='uk-child-width-1-3@s uk-child-width-1-4@m', uk-grid)
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/1.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="player.html") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/2.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/3.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
+                div.uk-grid.banner_mobile(uk-grid='')
+                    div(class="uk-width-auto@m")
+                        div.banner_tab
+                            ul.uk-list
+                                li
+                                    a(href='#') Все
+                                li
+                                    a(href='#') Реклама
+                                li 
+                                    a(href='#') Спорт 
+                                li
+                                    a(href='#') Истории
+                                li
+                                    a(href='#') Клипы 
+                    div(class="uk-width-expand@m")
+                        div.banner_slide.uk-position-relative.uk-visible-toggle(uk-slider="", class="uk-visible@m")
+                            ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/1.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="player.html") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/2.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/3.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/4.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/5.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/6.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/7.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/8.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/9.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/4.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/5.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/6.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/7.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/8.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/9.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                li
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть  
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                    br
+                                    div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                        .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
+                                            .banner_slide_overlay_title Билайн 
+                                            .banner_slide_overlay_text Тарифный план «Суйло»
+                                            .banner_slide_overlay_link.uk-button.uk-button-text  
+                                                a(href="") Смотреть 
+                                            
+                            a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
+                            a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
+                        div.mobslide.uk-margin-large-bottom.uk-grid(class="uk-hidden@m uk-child-width-1-2@s uk-child-width-1-1", uk-grid)
+                            div 
+                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                    .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
+                                        div(class="uk-width-expand")
+                                            div
+                                                .mobslide_title Билайн 
+                                                .mobslide_text Тарифный план «Суйло» 
+                                        div(class="uk-width-1-3").uk-flex.uk-flex-right
+                                            div 
+                                                a(href="") 
+                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
                                         
-                                    a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
-                                    a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
-
-                            li
-                                .uk-position-relative.uk-visible-toggle.uk-light(uk-slider='')
-                                    ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item(class='uk-child-width-1-3@s uk-child-width-1-4@m', uk-grid)
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
- 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                    a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
-                                    a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
-                            li
-                                .uk-position-relative.uk-visible-toggle.uk-light(uk-slider='')
-                                    ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item(class='uk-child-width-1-3@s uk-child-width-1-4@m', uk-grid)
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
- 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                    a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
-                                    a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
-                            li
-                                .uk-position-relative.uk-visible-toggle.uk-light(uk-slider='')
-                                    ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item(class='uk-child-width-1-3@s uk-child-width-1-4@m', uk-grid)
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
- 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                    a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
-                                    a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
-                            li
-                                .uk-position-relative.uk-visible-toggle.uk-light(uk-slider='')
-                                    ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item(class='uk-child-width-1-3@s uk-child-width-1-4@m', uk-grid)
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
- 
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-
-                                        li
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть  
-
-                                            div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                                img(src="img/jpg/draft.jpg", alt="picture", uk-cover)
-                                                canvas(width="200", height="200")
-                                                .banner_slide_overlay.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary
-                                                    .banner_slide_overlay_title Билайн 
-                                                    .banner_slide_overlay_text Тарифный план «Суйло»
-                                                    .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                        a(href="") Смотреть 
-                                    a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
-                                    a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
- 
+        
+                            div 
+                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                    .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
+                                        div(class="uk-width-expand")
+                                            div
+                                                .mobslide_title Билайн 
+                                                .mobslide_text Тарифный план «Суйло» 
+                                        div(class="uk-width-1-3").uk-flex.uk-flex-right
+                                            div 
+                                                a(href="") 
+                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")        
+                            div 
+                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                    .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
+                                        div(class="uk-width-expand")
+                                            div
+                                                .mobslide_title Билайн 
+                                                .mobslide_text Тарифный план «Суйло» 
+                                        div(class="uk-width-1-3").uk-flex.uk-flex-right
+                                            div 
+                                                a(href="") 
+                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")                                               
+                            
         .about
             .uk-container
                 .about_text 
@@ -576,24 +272,35 @@ html(lang="ru")
                     .uk-position-relative
                         ul.uk-slider-items.uk-grid.uk-grid-match.uk-flex.uk-flex-middle(class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-1")
                             li.client_block_item
-                                img(src="img/png/samsung.png", alt="samsung") 
-                                
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/samsung.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
                             li.client_block_item
-                                img(src="img/png/beeline.png", alt="beeline")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/beeline.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
                             li.client_block_item
-                                img(src="img/png/lacoste.png", alt="lacoste")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/lacoste.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
                             li.client_block_item
-                                img(src="img/png/converse.png", alt="converse")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/converse.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
                             li.client_block_item
-                                img(src="img/png/megacome.png", alt="megacome")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/megacome.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="150")
                             li.client_block_item
-                                img(src="img/png/samsung.png", alt="samsung")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/png/samsung.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
 
                     ul.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin-medium
         .team
             .uk-container
                 .client_title.team_title КОМАНДА
-                .uk-grid.uk-grid-collapse.uk-grid-match.uk-text-center(class="uk-child-width-1-4@m uk-child-width-1-2@s uk-child-width-1-1", uk-grid)
+                .uk-grid.uk-grid-collapse.uk-grid-match.uk-text-center(class="uk-child-width-1-4@m uk-child-width-1-2", uk-grid)
                     .team_item
                         div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                             img(src="img/jpg/man.jpg", alt="picture", uk-cover)
@@ -671,10 +378,63 @@ html(lang="ru")
                                     span.team_item_link_second
                                         a(href="")
                                             img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")
-        .brief.uk-background-contain.uk-background-muted.uk-height-medium.uk-panel.uk-flex.uk-flex-center.uk-flex-middle(style='background-image: url(img/png/circle-bg.png);')
-            .brief_button СКАЧАТЬ БРИФ
-                        
-                        
+        .brief.uk-background-contain.uk-background-muted.uk-height-small.uk-panel.uk-flex.uk-flex-center.uk-flex-middle(style='background-image: url(img/png/circle-bg.png);')
+            .brief_button.uk-flex.uk-flex-middle.uk-flex-center 
+                a(href="")
+                    span
+                        img(src="img/svg/brif.svg", alt="brif", width="23px", height="30px")
+                    span.uk-margin-small-left СКАЧАТЬ БРИФ 
+        .contact
+            .uk-container
+                .header.uk-margin-large-bottom КОНТАКТЫ 
+                .map_info(class="uk-visible@m")
+                    p 
+                        span.uk-margin-small-right(uk-icon="location")
+                        |г. Бишкек, Исанова 157/2
+                    p 
+                        span.uk-margin-small-right(uk-icon="mail")
+                        |Antares@gmail.com
+                    p 
+                        span.uk-margin-small-right(uk-icon="world")
+                        |www.antares.kg 
+                    p 
+                        span.uk-margin-small-right(uk-icon="receiver")
+                        |+996 500 00 00 00
+        .map#map 
+ 
+        .map_info.map_info_mod.map_info_mod(class="uk-hidden@m")
+            p 
+                span.uk-margin-small-right(uk-icon="location")
+                |г. Бишкек, Исанова 157/2
+            p 
+                span.uk-margin-small-right(uk-icon="mail")
+                |Antares@gmail.com
+            p 
+                span.uk-margin-small-right(uk-icon="world")
+                |www.antares.kg 
+            p 
+                span.uk-margin-small-right(uk-icon="receiver")
+                |+996 500 00 00 00
+                
+        footer.footer
+            .uk-container
+                .footer_body.uk-grid(class="uk-child-width-1-2@s uk-child-width-1-1", uk-grid="")
+                    div
+                        .footer_body_left.uk-flex.uk-flex-middle Antares Creative Group 2018
+                    div
+                        .footer_body_right.uk-flex.uk-flex-middle.uk-flex-right
+                            span.uk-margin-small-left(uk-icon="facebook")
+                            span.uk-margin-small-left(uk-icon="instagram")                           
+                            span.uk-margin-small-left  
+                                i.fa.fa-vk
+                            span.uk-margin-small-left(uk-icon="vkontakte")
+                            span.uk-margin-small-left(uk-icon="twitter")
+                            span.uk-margin-small-left(uk-icon="youtube") 
+ 
 
+                    
+        
+                        
+ 
         include ../components/footer.pug
         include assets/_scripts.pug

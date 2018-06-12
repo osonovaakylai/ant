@@ -13,32 +13,38 @@ html body
     font-family: $lato
     font-size: 16px
 
+.header
+    font-size: 20px
+    font-weight: bold
+    letter-spacing: 0.7px
+    color: #000000
+    text-align: center
+
 .banner
     &_tab
         margin-top: 63px
-        .uk-tab 
-            &:before
-                border-left: none
-            *
+        padding-right: 84px
+        ul 
+            li
                 a
                     color: #ffffff
                     font-family: $lato
                     letter-spacing: 1.1px
                     text-transform: none
                     font-size: 16px
-            .uk-active
-                a 
-                    color: $red
-                    font-family: $lato
-                    border-color: $red
-                    border-width: 2px
-                    letter-spacing: 1.1px
-                    font-weight: bold 
-                    text-transform: none
-                    font-size: 16px
+                    text-decoration: none
+                    padding-left: 5px
+                    transition: 0.3s
+                    &:hover
+                        color: $red
+                        font-family: $lato
+                        border-left: 2px solid $red
+                        letter-spacing: 1.1px
+                        font-weight: bold 
+                        text-transform: none
+                        font-size: 16px
+
     &_slide
-        position: relative
-        margin-right: 90px
         &_overlay.uk-overlay-primary
             background: rgba(227,6,19,.7) !important
             margin: -10px !important
@@ -51,7 +57,7 @@ html body
                 font-weight: bold
                 font-style: normal
                 font-stretch: normal
-                line-height: normal
+                line-height: normal 
                 letter-spacing: 1px
                 color: #ffffff
                 text-transform: uppercase
@@ -265,16 +271,90 @@ html body
             &_first
                 margin: 15px
 
-//*************BRIEF*************//$RECYCLE.BIN
+//*************BRIEF*************//
 .brief
+    height: 220px !important
     background-color: #fff
+    cursor: pointer
+    // background-image: radial-gradient(#383a47 5%, #1f2231 0%)
+    // background-size: 7% 10%
     &_button
         width: 300px
         height: 56px
         background: $red
         margin: 0 auto
         text-align: center
+        a
+            font-family: $lato
+            font-size: 18px
+            letter-spacing: 0.7px
+            color: #ffffff
+            text-decoration: none
+
+//*************CONTACT*************//
+.contact
+    z-index: 1
+
+#map
+    height: 400px
+.map
+    position: relative
+    &_info
+        position: absolute
+        width: 320px
+        height: 190px
+        background: $red
+        z-index: 1
+        right: 70px
+        margin-top: 50px
         font-family: $lato
-        font-size: 20px
-        letter-spacing: 0.7px
+        font-size: 16px
+        font-weight: 600
+        letter-spacing: 0.6px
         color: #ffffff
+        padding: 30px
+        &_mod  
+            position: relative !important
+            width: 100%
+            margin-top: 0
+            right: 30px
+        p
+            span
+                color: #aa030d
+                transition: 0.3s
+                &:hover
+                    color: #ffffff
+
+//****************FOOTER***************//
+.footer
+  background-color: #1f2231
+  padding-top: 40px
+  padding-bottom: 40px
+  &_body
+      &_left
+            font-family: $lato
+            font-size: 13
+            color: #64656a
+      &_right
+          span 
+                svg
+                    transition: 0.3s
+                    &:hover
+                        color: $red 
+                i
+                    transition: 0.3s
+                    &:hover
+                        color: $red
+
+.mobile
+    &_right
+        margin-top: -5px
+        .mybutton
+            border: none !important
+            svg
+                color: #ffffff
+@import 'assets/media'
+               
+            
+                     
+    

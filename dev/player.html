@@ -50,23 +50,31 @@
               </ul>
             </div>
           </nav>
-          <div class="mobile uk-hidden@m">
-            <button class="uk-button uk-button-default" type="button" uk-icon="list"></button>
-            <div class="uk-margin-remove" uk-dropdown="mode: click;">
-              <ul class="uk-nav uk-dropdown-nav">
-                <li><a href="index.html">Logo</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="index.html">Home</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#about" uk-scroll>About</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="">Service</a></li>
-                <li class="uk-nav-divider"></li>
-                <li><a href="#team" uk-scroll>Team</a></li>
-                <li class="uk-nav-divider"></li>
-                <li class="russian"><a href="" rel="ru">RU</a></li>
-                <li class="english"><a href="" rel="en">EN</a></li>
+          <div class="mobile uk-grid uk-hidden@m uk-child-width-1-2" uk-grid="">
+            <div>
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="index.html"> <img src="img/svg/logo.svg" alt="logo" width="129" height="30"></a></li>
               </ul>
+            </div>
+            <div class="mobile_right uk-flex uk-flex-right">
+              <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
+              <div class="uk-margin-remove" uk-dropdown="mode: click; pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav">
+                  <li><a class="header_right_list_item player_red header_right_list_item_mob" href="index.html">Работы </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="index.html">Наши клиенты </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="#about" uk-scroll>Команда </a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">Сервисы</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">О компании</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><a class="header_right_list_item header_right_list_item_mob" href="">Бриф</a></li>
+                  <li class="uk-nav-divider"></li>
+                  <li><span><a class="header_right_list_item header_right_list_item_mob" href="">EN</a></span><span class="uk-margin-small-left uk-margin-small-right">|</span><span><a class="header_right_list_item header_right_list_item_mob" href="">RU</a></span></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -127,5 +135,22 @@
     </div>
     <script src="js/libs.min.js"></script>
     <script src="js/common.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&amp;callback=initMap"></script>
+    <script>
+      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+      // Australia.
+      function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: {lat: 42.884045, lng: 74.592424}
+      });
+      var image = '../img/png/location.png';
+      var beachMarker = new google.maps.Marker({
+      position: {lat: 42.884045, lng: 74.592424},
+      map: map,
+      icon: image
+      });
+      }
+    </script>
   </body>
 </html>

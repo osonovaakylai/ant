@@ -47,6 +47,7 @@
 		"sw-precache": "^5.2.0"
 	},
 	"dependencies": {
+		"gulp-install": "^1.1.0",
 		"lightslider": "^1.1.6"
 	}
 }

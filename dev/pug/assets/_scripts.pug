@@ -3,3 +3,19 @@ script(src="js/libs.min.js")
 
 //- Основной файл сценариев
 script(src="js/common.min.js")
+script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&callback=initMap')
+script.
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
+    function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: {lat: 42.884045, lng: 74.592424}
+    });
+    var image = '../img/png/location.png';
+    var beachMarker = new google.maps.Marker({
+    position: {lat: 42.884045, lng: 74.592424},
+    map: map,
+    icon: image
+    });
+    }
