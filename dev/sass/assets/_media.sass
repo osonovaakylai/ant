@@ -2,9 +2,14 @@
 // @media screen and (max-width: 1600px)
 @media screen and (max-width: 1200px)
     .banner
+        &_right
+            padding-right: 88px
         &_tab
             padding-right: 4px
 @media screen and (max-width: 960px)
+    .banner_right 
+        padding-right: 0
+
     .banner
         background-image: none !important
         height: auto !important
@@ -47,7 +52,7 @@
     .banner
         &_slide
             &_overlay
-                padding-top: 20px
+                padding: 40px
                 top: 50px !important
                 &_title
                     font-size: 15px
@@ -61,4 +66,32 @@
                 justify-content: center
             &_right
                 justify-content: center
+
+@media screen and (max-width: 376px) 
+    .team_item_desc
+        font-size: 9px
+    .banner
+        &_slide
+            &_overlay
+                padding: 15px 
+                &_title
+                    font-size: 11px
+                &_text
+                    font-size: 11px
+                &_desc
+                    font-size: 9px
+@media screen and (max-width: 376px) 
+    .team_item_desc
+        font-size: 8px
+    .banner
+        &_slide
+            &_overlay
+                padding: 13px  
+                &_title
+                    font-size: 9px
+                &_text
+                    font-size: 8px
+                &_desc
+                    font-size: 7px
+
 

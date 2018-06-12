@@ -9,7 +9,7 @@ html(lang="ru")
             include ../components/header.pug
             .uk-container
                 div.uk-grid.banner_mobile(uk-grid='')
-                    div(class="uk-width-auto@m")
+                    div(class="uk-width-1-5@m")
                         div.banner_tab
                             ul.uk-list
                                 li
@@ -22,7 +22,7 @@ html(lang="ru")
                                     a(href='#') Истории
                                 li
                                     a(href='#') Клипы 
-                    div(class="uk-width-expand@m")
+                    div.banner_right(class="uk-width-expand@m")
                         div.banner_slide.uk-position-relative.uk-visible-toggle(uk-slider="", class="uk-visible@m")
                             ul.uk-slider-items.uk-grid.uk-grid-collapse.banner_slide_item
                                 li
@@ -309,7 +309,7 @@ html(lang="ru")
                             .uk-overlay.uk-position-bottom.uk-light
                                 .team_item_name Азамат Исраилов
                                 .team_item_status Арт-директор
-                            .banner_slide_overlay.uk-transition-slide-bottom.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary(style="top: 110px;background: rgb(227,6,19) !important")
+                            .banner_slide_overlay.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary(style="top: 110px;background: rgb(227,6,19) !important")
                                 .banner_slide_overlay_title.team_item_title Иван Стоянов 
                                 .banner_slide_overlay_text.team_item_text Сценарист
                                 .team_item_desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui ex, euismod vitae enim in, pulvinar sollicitudin urna. Etiam vestibulum augue
@@ -415,7 +415,7 @@ html(lang="ru")
             p 
                 span.uk-margin-small-right(uk-icon="receiver")
                 |+996 500 00 00 00
-                
+
         footer.footer
             .uk-container
                 .footer_body.uk-grid(class="uk-child-width-1-2@s uk-child-width-1-1", uk-grid="")

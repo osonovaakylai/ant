@@ -65,6 +65,9 @@ html body {
   color: #000000;
   text-align: center; }
 
+.banner_right {
+  padding-right: 153px; }
+
 .banner_tab {
   margin-top: 63px;
   padding-right: 84px; }
@@ -357,7 +360,8 @@ html body {
       position: relative !important;
       width: 100%;
       margin-top: 0;
-      right: 30px; }
+      right: 30px;
+      padding-left: 60px; }
     .map_info p span {
       color: #aa030d;
       -webkit-transition: 0.3s;
@@ -392,10 +396,14 @@ html body {
       color: #ffffff; }
 
 @media screen and (max-width: 1200px) {
+  .banner_right {
+    padding-right: 88px; }
   .banner_tab {
     padding-right: 4px; } }
 
 @media screen and (max-width: 960px) {
+  .banner_right {
+    padding-right: 0; }
   .banner {
     background-image: none !important;
     height: auto !important;
@@ -431,7 +439,7 @@ html body {
     margin-top: 40px !important;
     margin-bottom: 40px !important; }
   .banner_slide_overlay {
-    padding-top: 20px;
+    padding: 40px;
     top: 50px !important; }
     .banner_slide_overlay_title {
       font-size: 15px; }
@@ -449,3 +457,27 @@ html body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; } }
+
+@media screen and (max-width: 376px) {
+  .team_item_desc {
+    font-size: 9px; }
+  .banner_slide_overlay {
+    padding: 15px; }
+    .banner_slide_overlay_title {
+      font-size: 11px; }
+    .banner_slide_overlay_text {
+      font-size: 11px; }
+    .banner_slide_overlay_desc {
+      font-size: 9px; } }
+
+@media screen and (max-width: 376px) {
+  .team_item_desc {
+    font-size: 8px; }
+  .banner_slide_overlay {
+    padding: 13px; }
+    .banner_slide_overlay_title {
+      font-size: 9px; }
+    .banner_slide_overlay_text {
+      font-size: 8px; }
+    .banner_slide_overlay_desc {
+      font-size: 7px; } }
