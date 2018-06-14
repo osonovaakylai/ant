@@ -22,7 +22,7 @@ html body
 
 .banner
     &_right
-        padding-right: 153px
+        padding-right: 140px
     &_tab
         margin-top: 63px
         padding-right: 84px
@@ -47,6 +47,7 @@ html body
                         font-size: 16px
 
     &_slide
+        width: 800px
         &_overlay.uk-overlay-primary
             background: rgba(227,6,19,.7) !important
             margin: -10px !important
@@ -222,7 +223,7 @@ html body
 
 //****************CLIENT***************
 .client
-    background: rgba(30, 33, 48, 0.04)
+    background-color: #f6f6f7
     &_title
         font-size: 20px
         font-weight: bold
@@ -239,6 +240,12 @@ html body
 .team
     &_title
         margin: 60px auto !important
+    &_text
+        font-family: $lato
+        font-size: 16px
+        letter-spacing: 1.1px
+        text-align: center
+        color: #000000
     &_item
         background-image: linear-gradient(to bottom, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25))
         &_name
@@ -356,7 +363,55 @@ html body
             border: none !important
             svg
                 color: #ffffff
+        &_black
+            margin-top: -5px
+            .mybutton
+                border: none !important
+                svg
+                    color: #000000
 
+//****************WORKS PAGE **************//
+.works
+    background-image: radial-gradient(#383a47 5%,#1f2231 0) !important
+    background-size: 7% 10%
+hr.works_hr 
+    border-top: 1px solid #383a47 !important
+    margin: 0 !important
+
+
+//****************CLIENTS PAGE **************//
+.filter 
+    -webkit-filter: grayscale(1)
+    filter: grayscale(1)
+    transition: 0.3s
+    &:hover
+        filter: none
+.clients_header>.header>.uk-container>.uk-navbar-container>.uk-navbar-right>.uk-navbar-nav>li>a.clients_red
+    color: $red !important
+    font-weight: bold 
+
+//******************TEAM PAGE*************//
+.team_header>.header>.uk-container>.uk-navbar-container>.uk-navbar-right>.uk-navbar-nav>li>a.team_red
+    color: $red !important
+    font-weight: bold
+
+//*******************SERVICE PAGE***********//
+.service
+    font-family: $lato
+    color: #000000
+    font-size: 14px
+    &_title
+        letter-spacing: 0.5px
+        text-transform: uppercase
+    &_text
+        font-size: 14px
+    &_btn
+        width: 250px
+        height: 56px
+        border: solid 2px #e30613
+
+
+ 
 @import 'assets/media'
                
             

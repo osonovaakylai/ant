@@ -26,8 +26,8 @@
     <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
     <link rel="manifest" href="manifest.json">
   </head>
-  <body class="uk-animation-fade">
-    <div class="banner player uk-panel" style="height: 875px">
+  <body class="uk-animation-fade"> 
+    <div class="service_header">  
       <header class="header">
         <div class="uk-container">
           <nav class="uk-navbar-container header_container uk-visible@m" uk-navbar style="position: relative; z-index: 980;">
@@ -38,15 +38,15 @@
             </div>
             <div class="uk-navbar-right header_right">
               <ul class="uk-navbar-nav header_right_list">
-                <li><a class="header_right_list_item player_red" href="">Работы  </a></li>
-                <li><a class="header_right_list_item" href="">Наши клиенты </a></li>
-                <li><a class="header_right_list_item" href="">Команда </a></li>
+                <li><a class="header_right_list_item player_red" href="">Работы   </a></li>
+                <li><a class="header_right_list_item clients_red" href="">Наши клиенты </a></li>
+                <li><a class="header_right_list_item team_red" href="">Команда  </a></li>
                 <li><a class="header_right_list_item" href="">Сервисы </a></li>
                 <li><a class="header_right_list_item" href="">О компании </a></li>
                 <li><a class="header_right_list_item" href="">Бриф </a></li>
                 <li><a class="header_right_list_item" href="">Контакты </a></li>
-                <li class="header_right_list_item uk-flex uk-flex-middle"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">RU</a></span></li>
-                <li class="header_right_list_item uk-flex uk-flex-middle" style="margin-left: -2px"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">EN </a></span></li>
+                <li class="header_right_list_item header_right_list_item_clients uk-flex uk-flex-middle"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">RU</a></span></li>
+                <li class="header_right_list_item header_right_list_item_clients uk-flex uk-flex-middle" style="margin-left: -2px"><span class="unactive uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">EN </a></span></li>
               </ul>
             </div>
           </nav>
@@ -56,7 +56,7 @@
                 <li class="uk-active"><a href="index.html"> <img src="img/svg/logo.svg" alt="logo" width="129" height="30"></a></li>
               </ul>
             </div>
-            <div class="mobile_right uk-flex uk-flex-right">
+            <div class="mobile_right mobile_right_black uk-flex uk-flex-right">
               <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
               <div class="uk-margin-remove" uk-dropdown="mode: click; pos: top-right">
                 <ul class="uk-nav uk-dropdown-nav">
@@ -79,55 +79,43 @@
           </div>
         </div>
       </header>
-      <div class="uk-container">
-        <div class="player_body uk-grid" uk-grid="">
-          <div class="uk-width-expand@m">
-            <div class="player_body_item" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
-              <div class="player_body_title">БИЛАЙН. Тарифный план «Суйло»</div>
-              <div class="player_body_desc">Описание</div>
-              <div class="player_body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper</div>
-            </div>
-          </div>
-          <div class="uk-width-1-3@m">
-            <div class="player_body_clear"><a href="https://www.google.com/"></a></div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/1.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
+      <div class="service uk-margin-large-bottom">
+        <div class="uk-container"> 
+          <div class="client_title team_title uk-margin-small-bottom">СЕРВИСЫ </div>
+          <div class="uk-grid uk-grid-match uk-child-width-1-3@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid="">
+            <div>
+              <div class="uk-card">
+                <div class="uk-card-media-top uk-cover-container"><img src="img/png/service1.png" alt="service" uk-cover>
+                  <canvas width="300" height="240"></canvas>
                 </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/2.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/3.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/4.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/5.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/6.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/7.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/8.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/9.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
+                <div class="uk-margin-medium-top">
+                  <h4 class="service_title">РЕНТАЛ </h4>
+                  <p class="service_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada, neque vel varius tempus, eros lacus pretium est, eget iaculis ex quam ut urna. Morbi nec libero aliquet, convallis massa a, feugiat velit.</p>
+                  <div class="service_btn">ПЕРЕЧЕНЬ ТЕХНИКИ</div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+            </div>
+            <div>
+              <div class="uk-card">
+                <div class="uk-card-media-top uk-cover-container"><img src="img/png/service2.png" alt="service" uk-cover>
+                  <canvas width="300" height="240"></canvas>
+                </div>
+                <div class="uk-margin-medium-top">
+                  <h4 class="service_title">ПРОДАКШН В КЫРГЫЗСТАНЕ </h4>
+                  <p class="service_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada, neque vel varius tempus, eros lacus pretium est, eget iaculis ex quam ut urna. Morbi nec libero aliquet, convallis massa a, feugiat velit.</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="uk-card">
+                <div class="uk-card-media-top uk-cover-container"><img src="img/png/service3.png" alt="service" uk-cover>
+                  <canvas width="300" height="240"></canvas>
+                </div>
+                <div class="uk-margin-medium-top">
+                  <h4 class="service_title">ПРОДАКШН В ЦЕНТРАЛЬНОЙ АЗИИ </h4>
+                  <p class="service_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada, neque vel varius tempus, eros lacus pretium est, eget iaculis ex quam ut urna. Morbi nec libero aliquet, convallis massa a, feugiat velit.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

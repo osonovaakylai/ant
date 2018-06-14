@@ -1,0 +1,68 @@
+header.header
+    .uk-container
+        nav.uk-navbar-container.header_container(uk-navbar, style="position: relative; z-index: 980;", class="uk-visible@m")
+            .uk-navbar-left.header_left
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") 
+                            img(src="img/svg/logo.svg", alt="logo", width="129", height="30")
+            .uk-navbar-right.header_right
+                ul.uk-navbar-nav.header_right_list
+                    li
+                        a(href="").header_right_list_item.player_red Работы   
+                    li
+                        a(href="").header_right_list_item.clients_red Наши клиенты 
+                    li
+                        a(href="").header_right_list_item.team_red Команда  
+                    li
+                        a(href="").header_right_list_item Сервисы 
+                    li
+                        a(href="").header_right_list_item О компании 
+                    li
+                        a(href="").header_right_list_item Бриф 
+                    li
+                        a(href="").header_right_list_item Контакты 
+                    li.header_right_list_item.header_right_list_item_clients.uk-flex.uk-flex-middle
+                        span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                            a(href="") RU
+                    li.header_right_list_item.header_right_list_item_clients.uk-flex.uk-flex-middle(style="margin-left: -2px")
+                        span.unactive.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                            a(href="") EN 
+        .mobile.uk-grid(class="uk-hidden@m uk-child-width-1-2", uk-grid="")
+            div
+                ul.uk-navbar-nav
+                    li.uk-active
+                        a(href="index.html") 
+                            img(src="img/svg/logo.svg", alt="logo", width="129", height="30")
+            div.mobile_right.mobile_right_black.uk-flex.uk-flex-right
+                button.uk-button.mybutton.uk-button-default(type="button" uk-icon="menu")
+                div.uk-margin-remove(uk-dropdown="mode: click; pos: top-right")
+                    ul.uk-nav.uk-dropdown-nav
+                        li
+                            a(href="index.html").header_right_list_item.player_red.header_right_list_item_mob Работы 
+                        li.uk-nav-divider
+                        li
+                            a(href="index.html").header_right_list_item.header_right_list_item_mob Наши клиенты 
+                        li.uk-nav-divider
+                        li
+                            a(href="#about", uk-scroll).header_right_list_item.header_right_list_item_mob Команда 
+                        li.uk-nav-divider
+                        li
+                            a(href="").header_right_list_item.header_right_list_item_mob Сервисы
+                        li.uk-nav-divider
+                        li
+                            a(href="").header_right_list_item.header_right_list_item_mob О компании
+                        li.uk-nav-divider
+                        li
+                            a(href="").header_right_list_item.header_right_list_item_mob Бриф
+                        li.uk-nav-divider
+                        li
+                            span
+                                a(href="").header_right_list_item.header_right_list_item_mob EN
+                            span.uk-margin-small-left.uk-margin-small-right |
+                            span
+                                a(href="").header_right_list_item.header_right_list_item_mob RU
+
+ 
+
+                            

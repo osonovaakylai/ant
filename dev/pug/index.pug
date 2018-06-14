@@ -2,16 +2,16 @@ doctype
 html(lang="ru")
     head
         include assets/_metas.pug
-        include assets/_links.pug
-        
-    body.uk-animation-fade
+        include assets/_links.pug  
+           
+    body.uk-animation-fade        
         .banner.uk-background-cover.uk-panel(style='background-image: url(img/png/banner.png); height: 802px')
             include ../components/header.pug
-            .uk-container
+            .uk-container    
                 div.uk-grid.banner_mobile(uk-grid='')
                     div(class="uk-width-1-5@m")
-                        div.banner_tab
-                            ul.uk-list
+                        div.banner_tab 
+                            ul.uk-list 
                                 li
                                     a(href='#') Все
                                 li
@@ -33,7 +33,7 @@ html(lang="ru")
                                             .banner_slide_overlay_title Билайн 
                                             .banner_slide_overlay_text Тарифный план «Суйло»
                                             .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                a(href="player.html") Смотреть  
+                                                a(href="player.html") Смотреть   
                                     br
                                     div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                         img(src="img/jpg/size200x200/2.jpg", alt="picture", uk-cover)
@@ -152,7 +152,7 @@ html(lang="ru")
                                             .banner_slide_overlay_text Тарифный план «Суйло»
                                             .banner_slide_overlay_link.uk-button.uk-button-text  
                                                 a(href="") Смотреть 
-                                    br
+                                    br  
                                     div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                         img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
                                         canvas(width="200", height="200")
@@ -169,8 +169,8 @@ html(lang="ru")
                                             .banner_slide_overlay_title Билайн 
                                             .banner_slide_overlay_text Тарифный план «Суйло»
                                             .banner_slide_overlay_link.uk-button.uk-button-text  
-                                                a(href="") Смотреть  
-                                    br
+                                                a(href="") Смотреть   
+                                    br   
                                     div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                         img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
                                         canvas(width="200", height="200")
@@ -224,7 +224,7 @@ html(lang="ru")
                                     img(src="img/jpg/size200x200/11.jpg", alt="picture")
                                     .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
                                         div(class="uk-width-expand")
-                                            div
+                                            div 
                                                 .mobslide_title Билайн 
                                                 .mobslide_text Тарифный план «Суйло» 
                                         div(class="uk-width-1-3").uk-flex.uk-flex-right
@@ -232,7 +232,7 @@ html(lang="ru")
                                                 a(href="") 
                                                     img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
                                         
-        
+         
                             div 
                                 div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                     img(src="img/jpg/size200x200/11.jpg", alt="picture")
@@ -257,7 +257,7 @@ html(lang="ru")
                                             div 
                                                 a(href="") 
                                                     img(src="img/svg/play.svg", alt="play", width="30px", height="30px")                                               
-                            
+                             
         .about
             .uk-container
                 .about_text 
@@ -271,37 +271,37 @@ html(lang="ru")
                 div.client_block(uk-slider)
                     .uk-position-relative
                         ul.uk-slider-items.uk-grid.uk-grid-match.uk-flex.uk-flex-middle(class="uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-1")
-                            li.client_block_item
+                            li.client_block_item 
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/samsung.png", alt="samsung", uk-cover) 
+                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
+                                    canvas(width="200", height="100")
+                            li.client_block_item 
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img.filter(src="img/png/beeline.png", alt="beeline", uk-cover) 
                                     canvas(width="200", height="100")
                             li.client_block_item
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/beeline.png", alt="samsung", uk-cover) 
+                                    img.filter(src="img/png/beeline.png", alt="beeline", uk-cover) 
                                     canvas(width="200", height="100")
                             li.client_block_item
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/lacoste.png", alt="samsung", uk-cover) 
+                                    img.filter(src="img/png/beeline.png", alt="beeline", uk-cover) 
                                     canvas(width="200", height="100")
                             li.client_block_item
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/converse.png", alt="samsung", uk-cover) 
+                                    img.filter(src="img/png/beeline.png", alt="beeline", uk-cover) 
                                     canvas(width="200", height="100")
                             li.client_block_item
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/megacome.png", alt="samsung", uk-cover) 
-                                    canvas(width="200", height="150")
-                            li.client_block_item
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/png/samsung.png", alt="samsung", uk-cover) 
+                                    img.filter(src="img/png/beeline.png", alt="beeline", uk-cover) 
                                     canvas(width="200", height="100")
-
+  
                     ul.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin-medium
         .team
             .uk-container
                 .client_title.team_title КОМАНДА
                 .uk-grid.uk-grid-collapse.uk-grid-match.uk-text-center(class="uk-child-width-1-4@m uk-child-width-1-2", uk-grid)
-                    .team_item
+                    .team_item  
                         div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                             img(src="img/jpg/man.jpg", alt="picture", uk-cover)
                             canvas(width="300", height="360")
@@ -309,7 +309,7 @@ html(lang="ru")
                             .uk-overlay.uk-position-bottom.uk-light
                                 .team_item_name Азамат Исраилов
                                 .team_item_status Арт-директор
-                            .banner_slide_overlay.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary(style="top: 110px;background: rgb(227,6,19) !important")
+                            .banner_slide_overlay.uk-transition-slide-bottom.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary(style="top: 110px;background: rgb(227,6,19) !important")
                                 .banner_slide_overlay_title.team_item_title Иван Стоянов 
                                 .banner_slide_overlay_text.team_item_text Сценарист
                                 .team_item_desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui ex, euismod vitae enim in, pulvinar sollicitudin urna. Etiam vestibulum augue
@@ -319,9 +319,9 @@ html(lang="ru")
                                             img(src="img/svg/rectangle-copy.svg", alt="svg", width="20px", height="20px")
                                     span.team_item_link_second
                                         a(href="")
-                                            img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")
+                                            img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")                    
 
-                    .team_item
+                    .team_item  
                         div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                             img(src="img/jpg/man.jpg", alt="picture", uk-cover)
                             canvas(width="300", height="360")
@@ -359,7 +359,7 @@ html(lang="ru")
                                     span.team_item_link_second
                                         a(href="")
                                             img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")                    
-                    .team_item
+                    .team_item  
                         div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                             img(src="img/jpg/man.jpg", alt="picture", uk-cover)
                             canvas(width="300", height="360")
@@ -371,12 +371,12 @@ html(lang="ru")
                                 .banner_slide_overlay_title.team_item_title Иван Стоянов 
                                 .banner_slide_overlay_text.team_item_text Сценарист
                                 .team_item_desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui ex, euismod vitae enim in, pulvinar sollicitudin urna. Etiam vestibulum augue
-                                .team_item_link
+                                .team_item_link  
                                     span.team_item_link_first
                                         a(href="")
                                             img(src="img/svg/rectangle-copy.svg", alt="svg", width="20px", height="20px")
                                     span.team_item_link_second
-                                        a(href="")
+                                        a(href="") 
                                             img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")
         .brief.uk-background-contain.uk-background-muted.uk-height-small.uk-panel.uk-flex.uk-flex-center.uk-flex-middle(style='background-image: url(img/png/circle-bg.png);')
             .brief_button.uk-flex.uk-flex-middle.uk-flex-center 
@@ -416,25 +416,6 @@ html(lang="ru")
                 span.uk-margin-small-right(uk-icon="receiver")
                 |+996 500 00 00 00
 
-        footer.footer
-            .uk-container
-                .footer_body.uk-grid(class="uk-child-width-1-2@s uk-child-width-1-1", uk-grid="")
-                    div
-                        .footer_body_left.uk-flex.uk-flex-middle Antares Creative Group 2018
-                    div
-                        .footer_body_right.uk-flex.uk-flex-middle.uk-flex-right
-                            span.uk-margin-small-left(uk-icon="facebook")
-                            span.uk-margin-small-left(uk-icon="instagram")                           
-                            span.uk-margin-small-left  
-                                i.fa.fa-vk
-                            span.uk-margin-small-left(uk-icon="vkontakte")
-                            span.uk-margin-small-left(uk-icon="twitter")
-                            span.uk-margin-small-left(uk-icon="youtube") 
- 
-
-                    
-        
-                        
- 
+    
         include ../components/footer.pug
         include assets/_scripts.pug
