@@ -41,10 +41,10 @@
                 <li><a class="header_right_list_item player_red" href="">Работы   </a></li>
                 <li><a class="header_right_list_item clients_red" href="">Наши клиенты </a></li>
                 <li><a class="header_right_list_item team_red" href="">Команда  </a></li>
-                <li><a class="header_right_list_item" href="">Сервисы </a></li>
-                <li><a class="header_right_list_item" href="">О компании </a></li>
+                <li><a class="header_right_list_item service_red" href="">Сервисы </a></li>
+                <li><a class="header_right_list_item aboutus_red" href="">О компании </a></li>
                 <li><a class="header_right_list_item" href="">Бриф </a></li>
-                <li><a class="header_right_list_item" href="">Контакты </a></li>
+                <li><a class="header_right_list_item contact_red" href="">Контакты </a></li>
                 <li class="header_right_list_item header_right_list_item_clients uk-flex uk-flex-middle"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">RU</a></span></li>
                 <li class="header_right_list_item header_right_list_item_clients uk-flex uk-flex-middle" style="margin-left: -2px"><span class="unactive uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">EN </a></span></li>
               </ul>
@@ -183,19 +183,31 @@
     <script src="js/common.min.js"></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&amp;callback=initMap"></script>
     <script>
-      // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-      // Australia.
       function initMap() {
       var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 15,
       center: {lat: 42.884045, lng: 74.592424}
       });
+          var contentString = '<div id="content">'+
+              '<div id="siteNotice">'+
+              '</div>'+
+              '<div id="firstHeading">Antares</div>'+
+              '<div id="bodyContent">'+
+              '<div>Creative Group</div>'+
+              '</div>'+
+              '</div>'; 
+      var infowindow = new google.maps.InfoWindow({
+          content: contentString
+      });  
       var image = '../img/png/location.png';
       var beachMarker = new google.maps.Marker({
       position: {lat: 42.884045, lng: 74.592424},
       map: map,
       icon: image
       });
+          beachMarker.addListener('click', function() {
+            infowindow.open(map, beachMarker);
+          });
       }
     </script>
   </body>

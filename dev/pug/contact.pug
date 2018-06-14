@@ -1,0 +1,35 @@
+doctype
+html(lang="ru")
+    head
+        include assets/_metas.pug
+        include assets/_links.pug
+        
+    body.uk-animation-fade 
+        .clients_header   
+            include ../components/header-white.pug
+        .contact
+            .uk-container
+                .client_title КОНТАКТЫ
+                .contact_body.uk-grid.uk-grid-match(uk-grid="", class="uk-child-width-1-2@s uk-child-width-1-1")
+                    div.uk-margin-medium-top.uk-margin-medium-bottom(style="padding-right: 30px")
+                        .map#map 
+
+                    div.uk-margin-medium-top.uk-margin-medium-bottom
+                        div
+                            p 
+                                span.uk-margin-small-right(uk-icon="location")
+                                |г. Бишкек, Исанова 157/2
+                            p 
+                                span.uk-margin-small-right(uk-icon="mail")
+                                |Antares@gmail.com
+                            p 
+                                span.uk-margin-small-right(uk-icon="world")
+                                |www.antares.kg 
+                            p 
+                                span.uk-margin-small-right(uk-icon="receiver")
+                                |+996 500 00 00 00
+        
+
+    
+        include ../components/footer.pug
+        include assets/_scripts.pug

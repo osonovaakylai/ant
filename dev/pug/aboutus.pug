@@ -5,79 +5,27 @@ html(lang="ru")
         include assets/_links.pug
         
     body.uk-animation-fade 
-        .clients_header   
+        .aboutus_header   
             include ../components/header-white.pug
-        .client
+        .aboutus.uk-margin-large-bottom
+            .uk-grid.uk-grid-collapse.uk-grid-match.uk-text-center(class="uk-child-width-1-3", uk-grid)
+                .item.uk-box-shadow-hover-large
+                    div.uk-cover-container
+                        img(src="img/png/service1.png", alt="picture", uk-cover)
+                        canvas(width="300", height="250")
+                .item.uk-box-shadow-hover-large
+                    div.uk-cover-container
+                        img(src="img/png/service2.png", alt="picture", uk-cover)
+                        canvas(width="300", height="250")
+                .item.uk-box-shadow-hover-large
+                    div.uk-cover-container
+                        img(src="img/png/service3.png", alt="picture", uk-cover)
+                        canvas(width="300", height="250")
             .uk-container.uk-container-small
-                .client_title Наши клиенты
-
-                div.client_block
-                    .uk-position-relative
-                        ul.uk-grid.uk-grid-match.uk-flex.uk-flex-middle(class="uk-child-width-1-5@m uk-child-width-1-4@s uk-child-width-1-2")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0" )
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0" )
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0" )
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")
-                            li.client_block_item.uk-margin-medium-bottom
-                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img.filter(src="img/png/beeline.png", alt="samsung", uk-cover) 
-                                    canvas(width="120", height="60")                             
-
-                    ul.uk-slider-nav.uk-dotnav.uk-flex-center.uk-margin-medium
-        
-
-    
+                .client_title О КОМПАНИИ
+                p Продакшн-студия «Antares Creative Group» – начиная с 2011 года юридически зарегистрированная компания с 10 летним фактическим опытом в производстве видео и аудиороликов, документальных, отчетных и художественных фильмов, информационных сюжетов, инфографики и дизайн-материалов. Обладает всей необходимой технической и материальной базой для выполнения заказов своего профиля, в том числе, профессиональным осветительным оборудованием, коптерами и собственной камерой RED Epic Dragon.
+                p 1.    Студия «Antares Creative Group» - видеопродакшн полного цикла, оказывают весь спектр услуг — от сценария, подбора актеров и локаций, организации и технического обеспечения съемочного процесса до производства постпродакшна 
+                p 2.    Команда «Antares» подходит к решению задач креативно, эффективно, качественно, красиво. 
+                p 3.    При работе используются новейшие технологии
         include ../components/footer.pug
         include assets/_scripts.pug

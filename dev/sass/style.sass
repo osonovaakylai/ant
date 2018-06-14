@@ -99,6 +99,14 @@ html body
                 height: 17px
                 top: 20px
                 right: 0
+.selectedLINK
+  color: #e30613 !important
+  font-family: "Lato", sans-serif
+  border-left: 2px solid #e30613
+  letter-spacing: 1.1px
+  font-weight: bold
+  text-transform: none
+  font-size: 16px
 
 #over.uk-overlay-primary.uk-position-cover
     background: linear-gradient(to bottom, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25))
@@ -315,7 +323,7 @@ html body
         background: $red
         z-index: 1
         right: 70px
-        margin-top: 50px
+        margin-top: 110px
         font-family: $lato
         font-size: 16px
         font-weight: 600
@@ -324,10 +332,8 @@ html body
         padding: 30px
         &_mod  
             position: relative !important
-            width: 100%
             margin-top: 0
-            right: 30px
-            padding-left: 60px
+            margin-left: 45px
         p
             span
                 color: #aa030d
@@ -406,11 +412,57 @@ hr.works_hr
     &_text
         font-size: 14px
     &_btn
-        width: 250px
+        width: 280px
         height: 56px
         border: solid 2px #e30613
+        font-size: 18px
+        letter-spacing: 0.7px
+        color: #e30613
+        cursor: pointer
 
+.service_header>.header>.uk-container>.uk-navbar-container>.uk-navbar-right>.uk-navbar-nav>li>a.service_red
+    color: $red !important
+    font-weight: bold
 
+//****************ABOUT US***************
+.aboutus
+    background-color: #f6f6f7
+    font-family: $lato
+    font-size: 17px
+    letter-spacing: 0.6px
+    color: #000000
+
+.aboutus_header>.header>.uk-container>.uk-navbar-container>.uk-navbar-right>.uk-navbar-nav>li>a.aboutus_red
+    color: $red !important
+    font-weight: bold
+
+//****************CONTACT PAGE***************
+.contact
+    background-color: #f6f6f7
+    font-family: $lato
+    font-size: 17px
+    letter-spacing: 0.6px
+    color: #000000 
+    padding-bottom: 70px
+    &_body
+        background: #ffffff
+
+.contact_body.uk-grid 
+    margin-left: 0 !important
+#firstHeading
+    font-family: $lato
+    font-size: 24px
+    letter-spacing: 0.5px
+    color: $red
+    margin-top: 15px
+    font-size: 24px
+    margin-bottom: 5px !important
+    font-weight: 500
+#bodyContent
+    font-family: $lato
+    font-size: 14px
+    color: $red 
+    margin-bottom: 5px   
  
 @import 'assets/media'
                

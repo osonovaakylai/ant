@@ -220,8 +220,10 @@ html(lang="ru")
                             a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
                         div.mobslide.uk-margin-large-bottom.uk-grid(class="uk-hidden@m uk-child-width-1-2@s uk-child-width-1-1", uk-grid)
                             div 
-                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                    canvas(width="400", height="400")
+
                                     .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
                                         div(class="uk-width-expand")
                                             div 
@@ -234,30 +236,35 @@ html(lang="ru")
                                         
          
                             div 
-                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                    canvas(width="400", height="400")
+
                                     .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
                                         div(class="uk-width-expand")
-                                            div
+                                            div 
                                                 .mobslide_title Билайн 
                                                 .mobslide_text Тарифный план «Суйло» 
                                         div(class="uk-width-1-3").uk-flex.uk-flex-right
                                             div 
                                                 a(href="") 
-                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")        
+                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
+               
                             div 
-                                div.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/11.jpg", alt="picture")
+                                div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                    img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
+                                    canvas(width="400", height="400")
+
                                     .mobslide_slide.uk-overlay.uk-overlay-default.uk-position-bottom.uk-grid(uk-grid="")
                                         div(class="uk-width-expand")
-                                            div
+                                            div 
                                                 .mobslide_title Билайн 
                                                 .mobslide_text Тарифный план «Суйло» 
                                         div(class="uk-width-1-3").uk-flex.uk-flex-right
                                             div 
                                                 a(href="") 
-                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")                                               
-                             
+                                                    img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
+                                        
         .about
             .uk-container
                 .about_text 
@@ -352,14 +359,14 @@ html(lang="ru")
                                 .banner_slide_overlay_title.team_item_title Иван Стоянов 
                                 .banner_slide_overlay_text.team_item_text Сценарист
                                 .team_item_desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dui ex, euismod vitae enim in, pulvinar sollicitudin urna. Etiam vestibulum augue
-                                .team_item_link
+                                .team_item_link   
                                     span.team_item_link_first
                                         a(href="")
                                             img(src="img/svg/rectangle-copy.svg", alt="svg", width="20px", height="20px")
                                     span.team_item_link_second
                                         a(href="")
                                             img(src="img/svg/facebook.svg", alt="svg", width="20px", height="20px")                    
-                    .team_item  
+                    .team_item          
                         div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                             img(src="img/jpg/man.jpg", alt="picture", uk-cover)
                             canvas(width="300", height="360")
@@ -397,24 +404,25 @@ html(lang="ru")
                     p 
                         span.uk-margin-small-right(uk-icon="world")
                         |www.antares.kg 
+                    p  
+                        span.uk-margin-small-right(uk-icon="receiver")
+                        |+996 500 00 00 00 
+        .map#map  
+        div(class="uk-hidden@m", style="background: #e30613")
+            .uk-container
+                .map_info.map_info_mod.map_info_mod
+                    p 
+                        span.uk-margin-small-right(uk-icon="location")
+                        |г. Бишкек, Исанова 157/2
+                    p 
+                        span.uk-margin-small-right(uk-icon="mail")
+                        |Antares@gmail.com
+                    p 
+                        span.uk-margin-small-right(uk-icon="world")
+                        |www.antares.kg 
                     p 
                         span.uk-margin-small-right(uk-icon="receiver")
                         |+996 500 00 00 00
-        .map#map 
- 
-        .map_info.map_info_mod.map_info_mod(class="uk-hidden@m")
-            p 
-                span.uk-margin-small-right(uk-icon="location")
-                |г. Бишкек, Исанова 157/2
-            p 
-                span.uk-margin-small-right(uk-icon="mail")
-                |Antares@gmail.com
-            p 
-                span.uk-margin-small-right(uk-icon="world")
-                |www.antares.kg 
-            p 
-                span.uk-margin-small-right(uk-icon="receiver")
-                |+996 500 00 00 00
 
     
         include ../components/footer.pug
