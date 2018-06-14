@@ -5,107 +5,97 @@ html(lang="ru")
         include assets/_links.pug
         
     body.uk-animation-fade
-        .banner.player.uk-panel(style='height: 875px')
+        .banner.player.uk-panel(style='height: 1985px; padding-bottom: 70px')
             include ../components/header.pug
             .uk-container
-                .player_body.uk-grid(uk-grid="")
-                    div(class='uk-width-expand@m')
-                        .player_body_item(data-thumb='img/jpg/size200x200/1.jpg')
-                            img(src='img/jpg/instead-video/1.jpg', width="970px", height="474px")  
-                            .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                            .player_body_desc Описание
-                            .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
+                .player_body.uk-grid.uk-grid-small(uk-grid="")
+                    div.player_body_left 
+                        div
+                            .player_body_item(data-thumb='img/jpg/size200x200/1.jpg')
+                                img(src='img/jpg/instead-video/1.jpg', width="970px", height="474px")  
+                                .player_body_title БИЛАЙН. Тарифный план «Суйло»
+                                .player_body_desc Описание
+                                .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem. Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
+                            .player_body_item.uk-grid.uk-grid-match.uk-margin-medium-top.uk-margin-medium-bottom(uk-grid="", class="uk-child-width-1-2@m uk-child-width-1-1 uk-visible@m ", uk-lightbox="animation: scale")
+                                div
+                                    a(href="img/png/900x500.png")
+                                        div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                            img(src="img/png/900x500.png", alt="picture", uk-cover)
+                                            canvas(width="400", height="250")
+                                            .banner_slide_overlay.banner_slide_overlay_player.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary.uk-flex.uk-flex-middle.uk-flex-center
+                                                div(style="color: #ffffff")
+                                                    i.eye.fa.fa-eye
+                                div
+                                    a(href="img/png/900x500.png")
+                                        div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                            img(src="img/png/900x500.png", alt="picture", uk-cover)
+                                            canvas(width="400", height="250")
+                                            .banner_slide_overlay.banner_slide_overlay_player.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary.uk-flex.uk-flex-middle.uk-flex-center
+                                                div(style="color: #ffffff")
+                                                    i.eye.fa.fa-eye
+                                div
+                                    a(href="img/png/900x500.png")
+                                        div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                            img(src="img/png/900x500.png", alt="picture", uk-cover)
+                                            canvas(width="400", height="250")
+                                            .banner_slide_overlay.banner_slide_overlay_player.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary.uk-flex.uk-flex-middle.uk-flex-center
+                                                div(style="color: #ffffff")
+                                                    i.eye.fa.fa-eye
+                                div    
+                                    a(href="img/png/900x500.png")
+                                        div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                            img(src="img/png/900x500.png", alt="picture", uk-cover)
+                                            canvas(width="400", height="250")
+                                            .banner_slide_overlay.banner_slide_overlay_player.uk-transition-fade.uk-position-cover.uk-position-small.uk-overlay.uk-overlay-primary.uk-flex.uk-flex-middle.uk-flex-center
+                                                div(style="color: #ffffff")
+                                                    i.eye.fa.fa-eye
 
-                    div(class='uk-width-1-3@m')
-                        .player_body_clear
-                            a(href="https://www.google.com/")
-                        .swiper-container
-                            .swiper-wrapper
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/1.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/2.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/3.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/4.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/5.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/6.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/7.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/8.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/9.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
-                                .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
-                                    img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
-                                    canvas(width="200", height="200")
+                            .player_body_item(data-thumb='img/jpg/size200x200/1.jpg')
+                                img(src='img/jpg/instead-video/1.jpg', width="970px", height="474px")  
+                                .player_body_text.uk-margin-medium-top Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
 
-                            .swiper-button-next
-                            .swiper-button-prev
+                    div(class='uk-width-expand@m uk-visible@m', style="padding-left: 20px; position: relative;")
+                        div
+                            .player_body_clear
+                                a(href="https://www.google.com/")
+                            .swiper-container
+                                .swiper-wrapper
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/1.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/2.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/3.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/4.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/5.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/6.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/7.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/8.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/9.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/10.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+                                    .swiper-slide.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
+                                        img(src="img/jpg/size200x200/11.jpg", alt="picture", uk-cover)
+                                        canvas(width="200", height="200")
+
+                                .swiper-button-next
+                                .swiper-button-prev
                     
-
-
-                    //- ul#vertical(style="margin-bottom: 70px")
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/1.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/1.jpg', width="900px", height="474px")  
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/2.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/2.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/3.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/3.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/4.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/4.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/5.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/5.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/6.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/6.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/7.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/7.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/8.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/8.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                    //-     li.player_body_item(data-thumb='img/jpg/size200x200/9.jpg', style="margin-bottom: 20px !important")
-                    //-         img(src='img/jpg/instead-video/9.jpg') 
-                    //-         .player_body_title БИЛАЙН. Тарифный план «Суйло»
-                    //-         .player_body_desc Описание
-                    //-         .player_body_text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
-                       
         include ../components/footer.pug
         include assets/_scripts.pug

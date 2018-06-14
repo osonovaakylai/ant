@@ -27,7 +27,7 @@
     <link rel="manifest" href="manifest.json">
   </head>
   <body class="uk-animation-fade">
-    <div class="banner player uk-panel" style="height: 875px">
+    <div class="banner player uk-panel" style="height: 1985px; padding-bottom: 70px">
       <header class="header">
         <div class="uk-container">
           <nav class="uk-navbar-container header_container uk-visible@m" uk-navbar style="position: relative; z-index: 980;">
@@ -58,21 +58,16 @@
             </div>
             <div class="mobile_right uk-flex uk-flex-right">
               <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
-              <div class="uk-margin-remove" uk-dropdown="mode: click; pos: top-right">
-                <ul class="uk-nav uk-dropdown-nav">
+              <div class="uk-margin-remove menu_dropdown" uk-dropdown="mode: click; pos: top-left" style="background: #1f2231">
+                <ul class="uk-nav uk-dropdown-nav uk-text-left">
                   <li><a class="header_right_list_item player_red header_right_list_item_mob" href="index.html">Работы </a></li>
-                  <li class="uk-nav-divider"></li>
                   <li><a class="header_right_list_item header_right_list_item_mob" href="index.html">Наши клиенты </a></li>
-                  <li class="uk-nav-divider"></li>
-                  <li><a class="header_right_list_item header_right_list_item_mob" href="#about" uk-scroll>Команда </a></li>
-                  <li class="uk-nav-divider"></li>
+                  <li> <a class="header_right_list_item header_right_list_item_mob" href="#about" uk-scroll>Команда </a></li>
                   <li><a class="header_right_list_item header_right_list_item_mob" href="">Сервисы</a></li>
-                  <li class="uk-nav-divider"></li>
                   <li><a class="header_right_list_item header_right_list_item_mob" href="">О компании</a></li>
-                  <li class="uk-nav-divider"></li>
                   <li><a class="header_right_list_item header_right_list_item_mob" href="">Бриф</a></li>
-                  <li class="uk-nav-divider"></li>
-                  <li><span><a class="header_right_list_item header_right_list_item_mob" href="">EN</a></span><span class="uk-margin-small-left uk-margin-small-right">|</span><span><a class="header_right_list_item header_right_list_item_mob" href="">RU</a></span></li>
+                  <li class="uk-margin-small-top header_right_list_item uk-flex uk-flex-middle uk-display-inline-block uk-text-left"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">RU</a></span></li>
+                  <li class="uk-display-inline-block header_right_list_item uk-flex uk-flex-middle" style="margin-left: -2px"><span class="uk-flex uk-flex-middle uk-flex uk-flex-center"><a href="">EN </a></span></li>
                 </ul>
               </div>
             </div>
@@ -80,54 +75,91 @@
         </div>
       </header>
       <div class="uk-container">
-        <div class="player_body uk-grid" uk-grid="">
-          <div class="uk-width-expand@m">
-            <div class="player_body_item" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
-              <div class="player_body_title">БИЛАЙН. Тарифный план «Суйло»</div>
-              <div class="player_body_desc">Описание</div>
-              <div class="player_body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper</div>
+        <div class="player_body uk-grid uk-grid-small" uk-grid="">
+          <div class="player_body_left"> 
+            <div>
+              <div class="player_body_item" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
+                <div class="player_body_title">БИЛАЙН. Тарифный план «Суйло»</div>
+                <div class="player_body_desc">Описание</div>
+                <div class="player_body_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem. Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper</div>
+              </div>
+              <div class="player_body_item uk-grid uk-grid-match uk-margin-medium-top uk-margin-medium-bottom uk-child-width-1-2@m uk-child-width-1-1 uk-visible@m " uk-grid="" uk-lightbox="animation: scale">
+                <div><a href="img/png/900x500.png">
+                    <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/900x500.png" alt="picture" uk-cover>
+                      <canvas width="400" height="250"></canvas>
+                      <div class="banner_slide_overlay banner_slide_overlay_player uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-middle uk-flex-center">
+                        <div style="color: #ffffff"><i class="eye fa fa-eye"></i></div>
+                      </div>
+                    </div></a></div>
+                <div><a href="img/png/900x500.png">
+                    <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/900x500.png" alt="picture" uk-cover>
+                      <canvas width="400" height="250"></canvas>
+                      <div class="banner_slide_overlay banner_slide_overlay_player uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-middle uk-flex-center">
+                        <div style="color: #ffffff"><i class="eye fa fa-eye"></i></div>
+                      </div>
+                    </div></a></div>
+                <div><a href="img/png/900x500.png">
+                    <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/900x500.png" alt="picture" uk-cover>
+                      <canvas width="400" height="250"></canvas>
+                      <div class="banner_slide_overlay banner_slide_overlay_player uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-middle uk-flex-center">
+                        <div style="color: #ffffff"><i class="eye fa fa-eye"></i></div>
+                      </div>
+                    </div></a></div>
+                <div>   <a href="img/png/900x500.png">
+                    <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/png/900x500.png" alt="picture" uk-cover>
+                      <canvas width="400" height="250"></canvas>
+                      <div class="banner_slide_overlay banner_slide_overlay_player uk-transition-fade uk-position-cover uk-position-small uk-overlay uk-overlay-primary uk-flex uk-flex-middle uk-flex-center">
+                        <div style="color: #ffffff"><i class="eye fa fa-eye"></i></div>
+                      </div>
+                    </div></a></div>
+              </div>
+              <div class="player_body_item" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
+                <div class="player_body_text uk-margin-medium-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper</div>
+              </div>
             </div>
           </div>
-          <div class="uk-width-1-3@m">
-            <div class="player_body_clear"><a href="https://www.google.com/"></a></div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/1.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
+          <div class="uk-width-expand@m uk-visible@m" style="padding-left: 20px; position: relative;">
+            <div>
+              <div class="player_body_clear"><a href="https://www.google.com/"></a></div>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/1.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/2.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/3.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/4.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/5.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/6.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/7.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/8.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/9.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
+                  <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
+                    <canvas width="200" height="200"></canvas>
+                  </div>
                 </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/2.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/3.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/4.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/5.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/6.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/7.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/8.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/9.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/10.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
-                <div class="swiper-slide uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/11.jpg" alt="picture" uk-cover>
-                  <canvas width="200" height="200"></canvas>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </div>

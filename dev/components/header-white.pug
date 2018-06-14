@@ -34,35 +34,33 @@ header.header
                     li.uk-active
                         a(href="index.html") 
                             img(src="img/svg/logo.svg", alt="logo", width="129", height="30")
-            div.mobile_right.mobile_right_black.uk-flex.uk-flex-right
+            div.mobile_right.uk-flex.uk-flex-right
                 button.uk-button.mybutton.uk-button-default(type="button" uk-icon="menu")
-                div.uk-margin-remove(uk-dropdown="mode: click; pos: top-right")
-                    ul.uk-nav.uk-dropdown-nav
+                div.uk-margin-remove.menu_dropdown(uk-dropdown="mode: click; pos: top-left", style="background: #1f2231")
+                    ul.uk-nav.uk-dropdown-nav.uk-text-left
                         li
                             a(href="index.html").header_right_list_item.player_red.header_right_list_item_mob Работы 
-                        li.uk-nav-divider
                         li
                             a(href="index.html").header_right_list_item.header_right_list_item_mob Наши клиенты 
-                        li.uk-nav-divider
-                        li
+                  
+                        li 
                             a(href="#about", uk-scroll).header_right_list_item.header_right_list_item_mob Команда 
-                        li.uk-nav-divider
+                      
                         li
                             a(href="").header_right_list_item.header_right_list_item_mob Сервисы
-                        li.uk-nav-divider
+                       
                         li
                             a(href="").header_right_list_item.header_right_list_item_mob О компании
-                        li.uk-nav-divider
+                     
                         li
                             a(href="").header_right_list_item.header_right_list_item_mob Бриф
-                        li.uk-nav-divider
-                        li
-                            span
-                                a(href="").header_right_list_item.header_right_list_item_mob EN
-                            span.uk-margin-small-left.uk-margin-small-right |
-                            span
-                                a(href="").header_right_list_item.header_right_list_item_mob RU
 
+                        li.uk-margin-small-top.header_right_list_item.uk-flex.uk-flex-middle.uk-display-inline-block.uk-text-left
+                            span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                                a(href="") RU
+                        li.uk-display-inline-block.header_right_list_item.uk-flex.uk-flex-middle(style="margin-left: -2px")
+                            span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
+                                a(href="") EN 
  
 
                             
