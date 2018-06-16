@@ -14,9 +14,9 @@
     <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://github.com/alvarotrigo/fullPage.js.git">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
     <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
     <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
@@ -57,7 +57,11 @@
               </ul>
             </div>
             <div class="mobile_right uk-flex uk-flex-right">
-              <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
+              <div class="hamburger hamburger--spin"> 
+                <div class="hamburger-box"> 
+                  <div class="hamburger-inner">             </div>
+                </div>
+              </div>
               <div class="uk-margin-remove menu_dropdown" uk-dropdown="mode: click; pos: top-left" style="background: #1f2231">
                 <ul class="uk-nav uk-dropdown-nav uk-text-left">
                   <li><a class="header_right_list_item player_red header_right_list_item_mob" href="index.html">Работы </a></li>
@@ -75,6 +79,7 @@
         </div>
       </header>
       <div class="uk-container">
+        <div class="uk-text-right uk-margin-medium-top uk-hidden@m"><a href=""><img src="img/svg/clear.svg" alt="close" width="40px" height="40px"></a></div>
         <div class="player_body uk-grid uk-grid-small" uk-grid="">
           <div class="player_body_left"> 
             <div>
@@ -113,7 +118,7 @@
                       </div>
                     </div></a></div>
               </div>
-              <div class="player_body_item" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
+              <div class="player_body_item uk-visible@m" data-thumb="img/jpg/size200x200/1.jpg"><img src="img/jpg/instead-video/1.jpg" width="970px" height="474px">
                 <div class="player_body_text uk-margin-medium-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper</div>
               </div>
             </div>
@@ -178,6 +183,7 @@
       </div>
     </footer>
     <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.com/libraries/fullPage.js"></script>
     <script src="js/common.min.js"></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&amp;callback=initMap"></script>
     <script>
@@ -207,6 +213,8 @@
             infowindow.open(map, beachMarker);
           });
       }
+      
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </body>
 </html>

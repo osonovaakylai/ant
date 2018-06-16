@@ -3,15 +3,15 @@ html(lang="ru")
     head
         include assets/_metas.pug
         include assets/_links.pug  
-           
-    body.uk-animation-fade        
+             
+    body.uk-animation-fade            
         .banner.uk-background-cover.uk-panel(style='background-image: url(img/png/banner.png); height: 802px')
             include ../components/header.pug
             .uk-container    
                 div.uk-grid.banner_mobile(uk-grid='')
                     div(class="uk-width-1-5@m")
                         div.banner_tab 
-                            ul.uk-list 
+                            ul.uk-list   
                                 li
                                     a(href='#') Все
                                 li
@@ -152,7 +152,7 @@ html(lang="ru")
                                             .banner_slide_overlay_text Тарифный план «Суйло»
                                             .banner_slide_overlay_link.uk-button.uk-button-text  
                                                 a(href="") Смотреть 
-                                    br  
+                                    br   
                                     div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                         img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
                                         canvas(width="200", height="200")
@@ -219,7 +219,7 @@ html(lang="ru")
                             a.uk-position-top-right.banner_slide_previous(href='#',  uk-slider-item='previous')
                             a.uk-position-top-right.banner_slide_next(href='#', uk-slider-item='next')
                         div.mobslide.uk-margin-large-bottom.uk-grid(class="uk-hidden@m uk-child-width-1-2@s uk-child-width-1-1", uk-grid)
-                            div 
+                            div.uk-margin-remove-top 
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                     img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
                                     canvas(width="400", height="400")
@@ -235,7 +235,7 @@ html(lang="ru")
                                                     img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
                                         
          
-                            div 
+                            div.uk-margin-remove-top
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                     img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
                                     canvas(width="400", height="400")
@@ -250,7 +250,7 @@ html(lang="ru")
                                                 a(href="") 
                                                     img(src="img/svg/play.svg", alt="play", width="30px", height="30px")
                
-                            div 
+                            div.uk-margin-remove-top 
                                 div.uk-cover-container.uk-display-inline-block.uk-inline-clip.uk-transition-toggle( tabindex="0")
                                     img(src="img/jpg/size200x200/12.jpg", alt="picture", uk-cover)
                                     canvas(width="400", height="400")

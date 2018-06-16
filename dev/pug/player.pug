@@ -7,7 +7,11 @@ html(lang="ru")
     body.uk-animation-fade
         .banner.player.uk-panel(style='height: 1985px; padding-bottom: 70px')
             include ../components/header.pug
+
             .uk-container
+                .uk-text-right.uk-margin-medium-top(class="uk-hidden@m")
+                    a(href="")
+                        img(src="img/svg/clear.svg", alt="close", width="40px", height="40px")
                 .player_body.uk-grid.uk-grid-small(uk-grid="")
                     div.player_body_left 
                         div
@@ -50,7 +54,7 @@ html(lang="ru")
                                                 div(style="color: #ffffff")
                                                     i.eye.fa.fa-eye
 
-                            .player_body_item(data-thumb='img/jpg/size200x200/1.jpg')
+                            .player_body_item(data-thumb='img/jpg/size200x200/1.jpg', class="uk-visible@m")
                                 img(src='img/jpg/instead-video/1.jpg', width="970px", height="474px")  
                                 .player_body_text.uk-margin-medium-top Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc fringilla ex arcu, dictum finibus libero consequat in.Donec suscipit quis tortor id ullamcorper. Etiam dictum fringilla sapien, in efficitur augue tempus eget. Morbicommodo quam lorem, sit amet tempor massa fermentum quis. Donec eu libero sodales, rhoncus turpis a,commodo tellus. Donec nisl ipsum, imperdiet ut volutpat vel, finibus quis lectus. Quisque eget mauris sem.Nunc et lacus sed arcu imperdiet dignissim. Cras ullamcorper
 

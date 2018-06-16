@@ -35,7 +35,9 @@ header.header
                         a(href="index.html") 
                             img(src="img/svg/logo.svg", alt="logo", width="129", height="30")
             div.mobile_right.uk-flex.uk-flex-right
-                button.uk-button.mybutton.uk-button-default(type="button" uk-icon="menu")
+                .hamburger.hamburger--spin 
+                    .hamburger-box 
+                        .hamburger-inner              
                 div.uk-margin-remove.menu_dropdown(uk-dropdown="mode: click; pos: top-left", style="background: #1f2231")
                     ul.uk-nav.uk-dropdown-nav.uk-text-left
                         li
@@ -61,6 +63,7 @@ header.header
                         li.uk-display-inline-block.header_right_list_item.uk-flex.uk-flex-middle(style="margin-left: -2px")
                             span.uk-flex.uk-flex-middle.uk-flex.uk-flex-center
                                 a(href="") EN 
+
 
 
                             

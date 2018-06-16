@@ -14,9 +14,9 @@
     <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="https://github.com/alvarotrigo/fullPage.js.git">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
     <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
     <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
     <link rel="manifest" href="manifest.json">
   </head>
-  <body class="uk-animation-fade">       
+  <body class="uk-animation-fade">           
     <div class="banner uk-background-cover uk-panel" style="background-image: url(img/png/banner.png); height: 802px">
       <header class="header">
         <div class="uk-container">
@@ -57,7 +57,11 @@
               </ul>
             </div>
             <div class="mobile_right uk-flex uk-flex-right">
-              <button class="uk-button mybutton uk-button-default" type="button" uk-icon="menu"></button>
+              <div class="hamburger hamburger--spin"> 
+                <div class="hamburger-box"> 
+                  <div class="hamburger-inner">             </div>
+                </div>
+              </div>
               <div class="uk-margin-remove menu_dropdown" uk-dropdown="mode: click; pos: top-left" style="background: #1f2231">
                 <ul class="uk-nav uk-dropdown-nav uk-text-left">
                   <li><a class="header_right_list_item player_red header_right_list_item_mob" href="index.html">Работы </a></li>
@@ -78,7 +82,7 @@
         <div class="uk-grid banner_mobile" uk-grid="">
           <div class="uk-width-1-5@m">
             <div class="banner_tab"> 
-              <ul class="uk-list"> 
+              <ul class="uk-list">  
                 <li><a href="#">Все</a></li>
                 <li><a href="#">Реклама</a></li>
                 <li> <a href="#">Спорт </a></li>
@@ -275,7 +279,7 @@
               </ul><a class="uk-position-top-right banner_slide_previous" href="#" uk-slider-item="previous"></a><a class="uk-position-top-right banner_slide_next" href="#" uk-slider-item="next"></a>
             </div>
             <div class="mobslide uk-margin-large-bottom uk-grid uk-hidden@m uk-child-width-1-2@s uk-child-width-1-1" uk-grid>
-              <div> 
+              <div class="uk-margin-remove-top"> 
                 <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
                   <canvas width="400" height="400"></canvas>
                   <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
@@ -291,7 +295,7 @@
                   </div>
                 </div>
               </div>
-              <div> 
+              <div class="uk-margin-remove-top">
                 <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
                   <canvas width="400" height="400"></canvas>
                   <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
@@ -307,7 +311,7 @@
                   </div>
                 </div>
               </div>
-              <div> 
+              <div class="uk-margin-remove-top"> 
                 <div class="uk-cover-container uk-display-inline-block uk-inline-clip uk-transition-toggle" tabindex="0"><img src="img/jpg/size200x200/12.jpg" alt="picture" uk-cover>
                   <canvas width="400" height="400"></canvas>
                   <div class="mobslide_slide uk-overlay uk-overlay-default uk-position-bottom uk-grid" uk-grid="">
@@ -485,6 +489,7 @@
       </div>
     </footer>
     <script src="js/libs.min.js"></script>
+    <script src="https://cdnjs.com/libraries/fullPage.js"></script>
     <script src="js/common.min.js"></script>
     <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyGjmrcs8GN9sOaFgbzAORbPOUg5MB2HE&amp;callback=initMap"></script>
     <script>
@@ -514,6 +519,8 @@
             infowindow.open(map, beachMarker);
           });
       }
+      
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   </body>
 </html>
