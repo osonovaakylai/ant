@@ -23,7 +23,7 @@
   font-stretch: normal;
   line-height: normal;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #ffffff !important;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-align: left !important; }
@@ -59,6 +59,9 @@
         color: #e30613 !important; }
   .header_right_list_item_clients span.unactive {
     background: #ffffff !important; }
+
+.color {
+  color: #1f2231 !important; }
 
 html body {
   margin: 0;
