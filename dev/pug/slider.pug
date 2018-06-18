@@ -5,20 +5,56 @@ html(lang="ru")
         include assets/_links.pug  
            
     body.uk-animation-fade
-        #fullpage
-            .section 
-                h1
-                    | Scroll down full page NOW
-                h1
-                h2 for this one weird trick the web developers don't want you to know
-            .section
-                h2 For just one simple payment of $0...
-            .section
-                h2
-                    | You can have full page scroll 
-                    strong AND
-                    |  a scrollbar.
-            .section
-                h2
-                    | Don't wait, download here: 
-                    a(href='https://github.com/alvarotrigo/fullPage.js') fullPage.js at github
+    nav#cd-vertical-nav
+      ul
+        li
+          a(href='#section1', data-number='1')
+            span.cd-dot
+            span.cd-label Intro
+        li
+          a(href='#section2', data-number='2')
+            span.cd-dot
+            span.cd-label About
+        li
+          a(href='#section3', data-number='3')
+            span.cd-dot
+            span.cd-label Features
+        li
+          a(href='#section4', data-number='4')
+            span.cd-dot
+            span.cd-label Portfolio
+        li
+          a(href='#section5', data-number='5')
+            span.cd-dot
+            span.cd-label Pricing
+        li
+          a(href='#section6', data-number='6')
+            span.cd-dot
+            span.cd-label Contact
+    a.cd-nav-trigger.cd-img-replace
+      | Open navigation
+      span
+    section#section1.cd-section
+      h1 Vertical Fixed Navigation
+      a.cd-scroll-down.cd-img-replace(href='#section2') scroll down
+    // cd-section
+    section#section2.cd-section
+      p
+        | “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.”
+    // cd-section
+    section#section3.cd-section
+      p
+        | “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.”
+    // cd-section
+    section#section4.cd-section
+      p
+        | “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.”
+    // cd-section
+    section#section5.cd-section
+      p
+        | “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.”
+    // cd-section
+    section#section6.cd-section
+      p
+        | “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.”
+    // cd-section
