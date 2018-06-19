@@ -501,11 +501,13 @@ hr.works_hr {
   .service_btn {
     width: 280px;
     height: 56px;
-    border: solid 2px #e30613;
-    font-size: 18px;
-    letter-spacing: 0.7px;
-    color: #e30613;
-    cursor: pointer; }
+    border: solid 2px #e30613; }
+    .service_btn a {
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      color: #e30613;
+      cursor: pointer; }
 
 .service_header > .header > .uk-container > .uk-navbar-container > .uk-navbar-right > .uk-navbar-nav > li > a.service_red {
   color: #e30613 !important;
