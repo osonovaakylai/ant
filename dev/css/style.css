@@ -334,51 +334,51 @@ html body {
     width: 200px;
     height: 100px; }
 
-.team_title {
-  margin: 60px auto !important; }
-
-.team_text {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  letter-spacing: 1.1px;
-  text-align: center;
-  color: #000000; }
-
-.team_item {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 14, 43, 0)), to(rgba(227, 6, 19, 0.25)));
-  background-image: -webkit-linear-gradient(top, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25));
-  background-image: linear-gradient(to bottom, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25)); }
-  .team_item_name {
-    font-family: "Lato", sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.7px;
-    color: #ffffff;
-    text-align: left; }
-  .team_item_status {
+.team {
+  background-color: #f6f6f7; }
+  .team_title {
+    margin: 60px auto !important; }
+  .team_text {
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    letter-spacing: 0.6px;
-    color: #ffffff;
-    text-align: left; }
-  .team_item_title {
-    text-align: left;
-    font-size: 20px; }
-  .team_item_text {
-    text-align: left;
-    font-size: 18px;
-    margin-top: 6px;
-    font-weight: normal; }
-  .team_item_desc {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    text-align: left;
-    color: #ffffff;
-    margin-top: 4px; }
-  .team_item_link {
-    text-align: right; }
-    .team_item_link_first {
-      margin: 15px; }
+    letter-spacing: 1.1px;
+    text-align: center;
+    color: #000000; }
+  .team_item {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 14, 43, 0)), to(rgba(227, 6, 19, 0.25)));
+    background-image: -webkit-linear-gradient(top, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25));
+    background-image: linear-gradient(to bottom, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25)); }
+    .team_item_name {
+      font-family: "Lato", sans-serif;
+      font-size: 18px;
+      letter-spacing: 0.7px;
+      color: #ffffff;
+      text-align: left; }
+    .team_item_status {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.6px;
+      color: #ffffff;
+      text-align: left; }
+    .team_item_title {
+      text-align: left;
+      font-size: 20px; }
+    .team_item_text {
+      text-align: left;
+      font-size: 18px;
+      margin-top: 6px;
+      font-weight: normal; }
+    .team_item_desc {
+      font-family: "Lato", sans-serif;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      text-align: left;
+      color: #ffffff;
+      margin-top: 4px; }
+    .team_item_link {
+      text-align: right; }
+      .team_item_link_first {
+        margin: 15px; }
 
 .brief {
   height: 220px !important;
@@ -491,7 +491,8 @@ hr.works_hr {
 .service {
   font-family: "Lato", sans-serif;
   color: #000000;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #f6f6f7; }
   .service_title {
     letter-spacing: 0.5px;
     text-transform: uppercase; }
