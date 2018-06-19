@@ -206,6 +206,7 @@ html body {
   background-image: -webkit-radial-gradient(#383a47 5%, #1f2231 0) !important;
   background-image: radial-gradient(#383a47 5%, #1f2231 0) !important;
   background-size: 94px 94px;
+  padding-bottom: 68px;
   /* Controls Spacing, First value will scale width, second, height between dots */ }
   .player_body {
     margin-top: 40px;
@@ -591,6 +592,10 @@ hr.works_hr {
       letter-spacing: 0.5px;
       color: #ffffff;
       text-transform: uppercase; }
+
+.nobackground {
+  background-color: transparent;
+  padding-bottom: 0; }
 
 #fullpage .section {
   height: 100vh; }
