@@ -151,8 +151,8 @@ html body
 
 //************PLAYER*********// 
 .player
-    background-image: radial-gradient(#383a47 3%, #1f2231 0%)
-    background-size: 15% 10%
+    background-image: radial-gradient(#383a47 5%,#1f2231 0) !important
+    background-size:  $dot-space $dot-space
     /* Controls Spacing, First value will scale width, second, height between dots */
     &_body
         margin-top: 40px
@@ -423,7 +423,7 @@ html body
 //****************WORKS PAGE **************//
 .works
     background-image: radial-gradient(#383a47 5%,#1f2231 0) !important
-    background-size: 7% 10%
+    background-size:  $dot-space $dot-space
 hr.works_hr 
     border-top: 1px solid #383a47 !important
     margin: 0 !important
@@ -478,6 +478,7 @@ hr.works_hr
     font-size: 17px
     letter-spacing: 0.6px
     color: #000000
+    padding-bottom: 70px
 
 .aboutus_header>.header>.uk-container>.uk-navbar-container>.uk-navbar-right>.uk-navbar-nav>li>a.aboutus_red
     color: $red !important
@@ -533,6 +534,7 @@ hr.works_hr
 .hamburger-box 
     margin-top: 17px
 .works
+    padding-bottom: 70px
     &_btn
         background: $red
         width: 100%

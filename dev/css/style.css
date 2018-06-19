@@ -203,9 +203,9 @@ html body {
   background: linear-gradient(to bottom, rgba(243, 14, 43, 0), rgba(227, 6, 19, 0.25)); }
 
 .player {
-  background-image: -webkit-radial-gradient(#383a47 3%, #1f2231 0%);
-  background-image: radial-gradient(#383a47 3%, #1f2231 0%);
-  background-size: 15% 10%;
+  background-image: -webkit-radial-gradient(#383a47 5%, #1f2231 0) !important;
+  background-image: radial-gradient(#383a47 5%, #1f2231 0) !important;
+  background-size: 94px 94px;
   /* Controls Spacing, First value will scale width, second, height between dots */ }
   .player_body {
     margin-top: 40px;
@@ -465,7 +465,7 @@ html body {
 .works {
   background-image: -webkit-radial-gradient(#383a47 5%, #1f2231 0) !important;
   background-image: radial-gradient(#383a47 5%, #1f2231 0) !important;
-  background-size: 7% 10%; }
+  background-size: 94px 94px; }
 
 hr.works_hr {
   border-top: 1px solid #383a47 !important;
@@ -518,7 +518,8 @@ hr.works_hr {
   font-family: "Lato", sans-serif;
   font-size: 17px;
   letter-spacing: 0.6px;
-  color: #000000; }
+  color: #000000;
+  padding-bottom: 70px; }
 
 .aboutus_header > .header > .uk-container > .uk-navbar-container > .uk-navbar-right > .uk-navbar-nav > li > a.aboutus_red {
   color: #e30613 !important;
@@ -578,16 +579,18 @@ hr.works_hr {
 .hamburger-box {
   margin-top: 17px; }
 
-.works_btn {
-  background: #e30613;
-  width: 100%;
-  height: 50px; }
-  .works_btn a {
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-    color: #ffffff;
-    text-transform: uppercase; }
+.works {
+  padding-bottom: 70px; }
+  .works_btn {
+    background: #e30613;
+    width: 100%;
+    height: 50px; }
+    .works_btn a {
+      font-family: "Lato", sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+      text-transform: uppercase; }
 
 #fullpage .section {
   height: 100vh; }
