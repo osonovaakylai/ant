@@ -571,6 +571,9 @@ hr.works_hr {
   margin-left: -143px !important;
   width: 99% !important; }
 
+.mainteam {
+  background: #ffffff; }
+
 .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
   background-color: #ffffff;
   width: 35px; }
@@ -599,17 +602,12 @@ hr.works_hr {
   background-color: transparent;
   padding-bottom: 0; }
 
-#fullpage .section {
-  height: 100vh; }
-  #fullpage .section:nth-child(2n) {
-    background: #666; }
+.map_info_margin_top {
+  margin-top: 50px !important; }
 
-strong {
-  color: red; }
-
-a {
-  text-decoration: none;
-  color: #80A4C6; }
+.works > .header > .uk-container > .uk-navbar-container > .uk-navbar-right > .uk-navbar-nav > li > a.works_red {
+  color: #e30613 !important;
+  font-weight: bold; }
 
 @media screen and (max-width: 1315px) {
   .uk-lightbox-button.uk-position-center-right.uk-position-medium.uk-transition-fade.uk-slidenav-next.uk-icon.uk-slidenav svg {
