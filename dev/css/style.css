@@ -336,6 +336,7 @@ html body {
     height: 100px; }
 
 .team {
+  padding-bottom: 120px;
   background-color: #f6f6f7; }
   .team_title {
     margin: 60px auto !important; }
@@ -493,7 +494,8 @@ hr.works_hr {
   font-family: "Lato", sans-serif;
   color: #000000;
   font-size: 14px;
-  background-color: #f6f6f7; }
+  background-color: #f6f6f7;
+  padding-bottom: 120px; }
   .service_title {
     letter-spacing: 0.5px;
     text-transform: uppercase; }
@@ -520,7 +522,7 @@ hr.works_hr {
   font-size: 17px;
   letter-spacing: 0.6px;
   color: #000000;
-  padding-bottom: 70px; }
+  padding-bottom: 120px; }
 
 .aboutus_header > .header > .uk-container > .uk-navbar-container > .uk-navbar-right > .uk-navbar-nav > li > a.aboutus_red {
   color: #e30613 !important;
@@ -532,7 +534,7 @@ hr.works_hr {
   font-size: 17px;
   letter-spacing: 0.6px;
   color: #000000;
-  padding-bottom: 70px; }
+  padding-bottom: 120px; }
   .contact_body {
     background: #ffffff; }
 
